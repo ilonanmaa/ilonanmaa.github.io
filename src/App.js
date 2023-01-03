@@ -1,15 +1,27 @@
-const App = () => {
-  const now = new Date();
-  const a = 10;
-  const b = 20;
+import NavBar from "./components/NavBar";
+import Education from "./components/Education";
+import Experience from "./components/Experience";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Home from "./components/Home";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Banner from "./components/Banner";
+import "./App.css";
 
+const App = () => {
   return (
-    <div>
-      <p>Hello world, it is {now.toString()}</p>
-      <p>
-        {a} plus {b} is {a + b}
-      </p>
-    </div>
+    <BrowserRouter>
+      <NavBar />
+      <Banner />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/education" element={<Education />} />
+        <Route path="/experience" element={<Experience />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 
