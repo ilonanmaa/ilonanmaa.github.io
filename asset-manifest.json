@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/ilonanmaa.github.io/static/css/main.073c9b0a.css",
+    "main.js": "/ilonanmaa.github.io/static/js/main.91a39b04.js",
+    "static/js/787.f76c8063.chunk.js": "/ilonanmaa.github.io/static/js/787.f76c8063.chunk.js",
+    "static/media/logo.svg": "/ilonanmaa.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/ilonanmaa.github.io/index.html",
+    "main.073c9b0a.css.map": "/ilonanmaa.github.io/static/css/main.073c9b0a.css.map",
+    "main.91a39b04.js.map": "/ilonanmaa.github.io/static/js/main.91a39b04.js.map",
+    "787.f76c8063.chunk.js.map": "/ilonanmaa.github.io/static/js/787.f76c8063.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.91a39b04.js"
+  ]
+}
