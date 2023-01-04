@@ -1,3 +1,17 @@
+.app {
+  background-color: black;
+}
+h1,
+h2,
+h3,
+h4,
+h6,
+p {
+  color: azure;
+}
+h5 {
+  color: #18ffff;
+}
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
@@ -5,4 +19,64 @@
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.container-education-experience {
+  flex-direction: row;
+}
+
+.card-body {
+  background-color: black;
+}
+.card-title {
+  color: azure;
+}
+.course-carousel {
+  align-items: center;
+}
+
+.course {
+  position: relative;
+}
+
+.navbar {
+  background-color: transparent;
+  border-bottom: 1px solid azure;
+}
+.nav-link {
+  color: azure;
+}
+.row-education-experience {
+  align-items: center;
+  flex-direction: row;
+}
+.skill-bar {
+  margin: 1em;
+  color: #18ffff;
+}
+.timeline {
+  border-left: 1px solid hsl(0, 0%, 90%);
+  position: relative;
+  list-style: none;
+  line-height: 1em;
+  margin: 1em;
+}
+
+.timeline .timeline-item {
+  position: relative;
+}
+
+.timeline .timeline-item:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+
+.timeline .timeline-item:after {
+  background-color: hsl(0, 0%, 90%);
+  left: -38px;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  content: "";
 }

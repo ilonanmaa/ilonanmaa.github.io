@@ -4,24 +4,31 @@ import Experience from "./components/Experience";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./components/Home";
-import About from "./components/About";
 import Contact from "./components/Contact";
 import Banner from "./components/Banner";
 import "./App.css";
+import { Col, Container, Row } from "react-bootstrap";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <div className="app">
       <NavBar />
       <Banner />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/education" element={<Education />} />
-        <Route path="/experience" element={<Experience />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </BrowserRouter>
+      <Container className="container-education-experience">
+        <Row className="row-education-experience">
+          <Col>
+            <Education />
+          </Col>
+          <Col>
+            <Experience />
+          </Col>
+        </Row>
+      </Container>
+      <Projects />
+      <Skills />
+    </div>
   );
 };
 
