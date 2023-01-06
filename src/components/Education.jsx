@@ -3,21 +3,36 @@ import { Carousel, Card } from "react-bootstrap";
 
 const Education = () => {
   return (
-    <Container>
-      <h3>Education</h3>
-      <ul className="timeline">
-        <li className="timeline-item">
-          <h5>Bachelor of Science in Technology</h5>
-          <p>Aalto University</p>
-          <p>Computer science</p>
-          <p>2020 - 2023</p>
-        </li>
-        <li className="timeline-item">
-          <h5>High school diploma</h5>
-          <p>Ressun lukio</p>
-          <p>2017 - 2020</p>
-        </li>
-      </ul>
+    <Container className="timeline">
+      <Row className="title-timeline">
+        <h3>Education</h3>
+      </Row>
+      <section id="cd-timeline" class="cd-container">
+        <div class="cd-timeline-block">
+          <div class="cd-timeline-img cd-picture"></div>
+
+          <div class="cd-timeline-content">
+            <h2>Bachelor of technology</h2>
+            <p>
+              Working alongside the designer team implementing the designs, also
+              developing custom solutions to address team necessities.
+            </p>
+          </div>
+        </div>
+
+        <div class="cd-timeline-block">
+          <div class="cd-timeline-img cd-movie"></div>
+
+          <div class="cd-timeline-content">
+            <h2>High school diploma</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto,
+              optio, dolorum provident rerum aut hic quasi placeat iure tempora
+              laudantium ipsa ad debitis unde?
+            </p>
+          </div>
+        </div>
+      </section>
     </Container>
   );
 };

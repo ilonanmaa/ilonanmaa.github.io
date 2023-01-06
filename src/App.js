@@ -14,20 +14,24 @@ import Projects from "./components/Projects";
 const App = () => {
   return (
     <div className="app">
-      <NavBar />
-      <Banner />
-      <Container className="container-education-experience">
-        <Row className="row-education-experience">
-          <Col>
-            <Education />
-          </Col>
-          <Col>
-            <Experience />
-          </Col>
-        </Row>
-      </Container>
-      <Projects />
-      <Skills />
+      <Row>
+        <Col>
+          <NavBar />
+          <Banner />
+          <div className="container-education-experience-bg">
+            <div className="container-education-experience">
+              <Education />
+            </div>
+          </div>
+          <div className="container-education-experience-bg">
+            <div className="container-education-experience">
+              <Experience />
+            </div>
+          </div>
+          <Projects />
+          <Skills />
+        </Col>
+      </Row>
     </div>
   );
 };
