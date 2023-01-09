@@ -1,27 +1,32 @@
-import { Col, Container, Row, ProgressBar } from "react-bootstrap";
+import { Col, Container, Row, ProgressBar, Tabs, Tab } from "react-bootstrap";
+import { Progress } from "reactstrap";
 
 const Skills = () => {
   return (
-    <div className="container-skills-bg">
-      <Container className="container-skills">
+    <div className="skills-container-bg">
+      <Container className="skills-container">
         <Row>
-          <h3>Skills</h3>;
+          <h2>Skills</h2>;
         </Row>
         <Row>
-          <Col>
-            <h4>Programming</h4>
-            <Container>
-              <p>Scala</p>
-              <ProgressBar className="skill-bar" now={80} />
-              <p>React</p>
-              <ProgressBar className="skill-bar" now={50} />
-              <p>React native</p>
-              <ProgressBar className="skill-bar" now={50} />
-            </Container>
-          </Col>
-          <Col>
-            <h4>Languages</h4>
-          </Col>
+          <Tabs
+            defaultActiveKey="programming"
+            className="tab-bar-pill"
+            fill
+            justify
+          >
+            <Tab eventKey="programming" title="Programming" className="tabs">
+              <Container>
+                <p>Scala</p>
+                <Progress barClassName="skill-bar" value={90} />
+                <p>React native</p>
+                <Progress barClassName="skill-bar" value={70} />
+                <p>React</p>
+                <Progress barClassName="skill-bar" value={60} />
+              </Container>
+            </Tab>
+            <Tab eventKey="languages" title="Languages" className="tabs"></Tab>
+          </Tabs>
         </Row>
       </Container>
     </div>

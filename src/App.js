@@ -17,19 +17,14 @@ const App = () => {
       <Row>
         <Col>
           <NavBar />
-          <Banner />
-          <div className="container-education-experience-bg">
-            <div className="container-education-experience">
-              <Education />
-            </div>
-          </div>
-          <div className="container-education-experience-bg">
-            <div className="container-education-experience">
-              <Experience />
-            </div>
-          </div>
-          <Projects />
+          <section className="banner-education-section">
+            <Banner />
+            <Education />
+          </section>
+
+          <Experience />
           <Skills />
+          <Projects />
         </Col>
       </Row>
     </div>

@@ -1,11 +1,35 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import { useState, useEffect } from "react";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
 const NavBar = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      if (
+        window.scrollY >
+        document.getElementById("welcome").getBoundingClientRect().bottom
+      ) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", onScroll);
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
-    <Navbar expand="lg" className="navbar" fixed="top">
+    <Navbar
+      expand="lg"
+      className={scrolled ? "navbar-scrolled" : "navbar-notscrolled"}
+      fixed="top"
+    >
       <Container>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

@@ -3,58 +3,48 @@ import { Carousel, Card } from "react-bootstrap";
 
 const Experience = () => {
   return (
-    <Container className="timeline">
-      <Row className="title-timeline">
-        <h3>Experience</h3>
-      </Row>
-      <section id="cd-timeline" class="cd-container">
-        <div class="cd-timeline-block">
-          <div class="cd-timeline-img cd-picture"></div>
+    <div className="timeline-experience">
+      <Container className="timeline-container">
+        <Row className="title-timeline">
+          <h2>Experience</h2>
+        </Row>
+        <section id="cd-timeline" class="cd-container">
+          <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture"></div>
 
-          <div class="cd-timeline-content">
-            <h2>Penta Consulting</h2>
-            <p>
-              Working alongside the designer team implementing the designs, also
-              developing custom solutions to address team necessities.
-            </p>
+            <div class="cd-timeline-content">
+              <h2>Software developer in a scrum team</h2>
+              <p>
+                Developer in a project done during courses software project 1
+                and 2. <br /> Beamex <br /> Part-time
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="cd-timeline-block">
-          <div class="cd-timeline-img cd-movie"></div>
-          <div class="cd-timeline-content">
-            <h2>Title of section 2</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto,
-              optio, dolorum provident rerum aut hic quasi placeat iure tempora
-              laudantium ipsa ad debitis unde?
-            </p>
+          <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-movie"></div>
+
+            <div class="cd-timeline-content">
+              <h2>Teaching assistant</h2>
+              <p>
+                TA for programming 1 (O1). <br /> Aalto university <br />{" "}
+                Part-time <br /> 9/2022-12/2022
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="cd-timeline-block">
-          <div class="cd-timeline-img cd-movie"></div>
-          <div class="cd-timeline-content">
-            <h2>Title of section 2</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto,
-              optio, dolorum provident rerum aut hic quasi placeat iure tempora
-              laudantium ipsa ad debitis unde?
-            </p>
+          <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-movie"></div>
+
+            <div class="cd-timeline-content">
+              <h2>Stablehand</h2>
+              <p>
+                Leppävaara riding school <br /> Part-time <br /> 2017 - 2020
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="cd-timeline-block">
-          <div class="cd-timeline-img cd-movie"></div>
-          <div class="cd-timeline-content">
-            <h2>Title of section 2</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto,
-              optio, dolorum provident rerum aut hic quasi placeat iure tempora
-              laudantium ipsa ad debitis unde?
-            </p>
-          </div>
-        </div>
-      </section>
-    </Container>
+        </section>
+      </Container>
+    </div>
   );
 };
 

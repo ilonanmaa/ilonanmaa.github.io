@@ -1,15 +1,15 @@
 import { Container, Card, Row, Col } from "react-bootstrap";
-import projectBG from "../assets/img/banner-bg.jpg";
+import projectBG from "../assets/img/banner-stars-bg.jpg";
 
 const Projects = () => {
   return (
     <div className="container-projects-bg">
       <Container className="container-projects">
         <Row>
-          <h3>Projects</h3>
+          <h2>Projects</h2>
         </Row>
         <Row>
-          <Col>
+          <Col className="projects-column">
             <Card style={{ width: "18rem" }}>
               <Card.Img variant="top" src={projectBG} />
               <Card.Body>
@@ -21,7 +21,7 @@ const Projects = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col>
+          <Col className="projects-column">
             <Card style={{ width: "18rem" }}>
               <Card.Img variant="top" src={projectBG} />
               <Card.Body className="card-body">
