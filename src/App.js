@@ -21,9 +21,8 @@ const App = () => {
             <Banner />
             <Education />
           </section>
-
-          <Experience />
           <Skills />
+          <Experience />
           <Projects />
         </Col>
       </Row>

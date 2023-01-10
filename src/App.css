@@ -2,7 +2,8 @@ html,
 body {
   width: 100%;
   overflow-x: hidden;
-  font-family: Arial;
+  font-family: Arial !important;
+  scroll-behavior: smooth;
 }
 .app {
   background-color: black;
@@ -36,6 +37,14 @@ h4 {
   padding: 2rem;
 }
 
+h5 {
+  font-size: 1.9rem;
+  padding: 2rem;
+}
+
+.badge {
+  margin: 1rem;
+}
 #welcome {
   padding: 2rem;
   border: 1px solid azure;
@@ -47,6 +56,7 @@ h4 {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  transition: 0.4s ease-in;
 }
 
 .navbar-notscrolled {
@@ -55,6 +65,7 @@ h4 {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  transition: 0.4s ease-in;
 }
 .nav-link {
   color: azure;
@@ -80,8 +91,20 @@ h4 {
   color: azure;
 }
 
-.container-projects-bg {
-  background-color: black;
+.projects-container-bg {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 5%,
+      rgba(0, 0, 0, 0) 95%
+    ),
+    linear-gradient(
+      90deg,
+      rgba(146, 99, 203, 1) 20%,
+      rgba(108, 181, 220, 1) 45%,
+      rgba(80, 101, 171, 1) 59%,
+      rgba(87, 44, 142, 1) 81%,
+      rgba(53, 30, 106, 1) 100%
+    );
   padding: 2em;
 }
 
@@ -108,9 +131,39 @@ h4 {
   flex-direction: column;
   align-items: center;
 }
+.experience-container-bg {
+  background-color: black;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 5%,
+      rgba(0, 0, 0, 0) 95%
+    ),
+    linear-gradient(
+      90deg,
+      rgba(146, 99, 203, 1) 20%,
+      rgba(108, 181, 220, 1) 45%,
+      rgba(80, 101, 171, 1) 59%,
+      rgba(87, 44, 142, 1) 81%,
+      rgba(53, 30, 106, 1) 100%
+    );
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2em;
+}
+.experience-container {
+  background-color: transparent;
+  text-align: center;
+  padding: 2em;
+  border-radius: 4em;
+}
 
 .skills-container-bg {
   background-color: black;
+  background-image: url("./assets/img/banner-stars-bg.jpg");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 2em;
 }
 .skills-container {
@@ -118,6 +171,16 @@ h4 {
   text-align: center;
   padding: 2em;
   border-radius: 4em;
+}
+.skill-bar {
+  background: linear-gradient(
+    90deg,
+    rgba(146, 99, 203, 1) 20%,
+    rgba(108, 181, 220, 1) 45%,
+    rgba(80, 101, 171, 1) 59%,
+    rgba(87, 44, 142, 1) 81%,
+    rgba(53, 30, 106, 1) 100%
+  ) !important;
 }
 
 .card-body {
@@ -136,31 +199,23 @@ h4 {
   position: relative;
 }
 
-.skill-bar {
-  background: linear-gradient(
-    90deg,
-    rgba(146, 99, 203, 1) 20%,
-    rgba(108, 181, 220, 1) 45%,
-    rgba(80, 101, 171, 1) 59%,
-    rgba(87, 44, 142, 1) 81%,
-    rgba(53, 30, 106, 1) 100%
-  ) !important;
-}
-
 .tabs {
   padding: 2rem;
+  overflow: hidden;
 }
 
 .tab-key {
 }
 .tab-bar-pill {
-  width: 70%;
+  width: 80%;
   flex-direction: row;
   justify-content: space-evenly;
+  align-items: center;
   margin-left: auto;
   margin-right: auto;
   border-radius: 2rem;
   background-color: rgb(255 255 255 / 10%);
+  overflow: hidden;
 }
 
 /* -------------------------------- 
