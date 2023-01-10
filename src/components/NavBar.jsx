@@ -6,7 +6,6 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 
 const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
-
   useEffect(() => {
     const onScroll = () => {
       if (
@@ -24,6 +23,13 @@ const NavBar = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  const handleClickScroll = ({ clicked }) => {
+    const element = document.getElementById(clicked);
+    if (element) {
+      element.scrollIntoView();
+    }
+  };
+
   return (
     <Navbar
       expand="lg"
@@ -34,10 +40,18 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link className="nav-link" href="/">
+            <Nav.Link
+              className="nav-link"
+              href="/"
+              onClick={handleClickScroll("banner")}
+            >
               Home
             </Nav.Link>
-            <Nav.Link className="nav-link" href="/education">
+            <Nav.Link
+              className="nav-link"
+              href="/education"
+              onClick={handleClickScroll("education")}
+            >
               Education
             </Nav.Link>
             <Nav.Link className="nav-link" href="/experience">
