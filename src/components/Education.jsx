@@ -1,4 +1,4 @@
-import { Container, Col, Row } from "react-bootstrap";
+import { Container, Col, Row, CardGroup } from "react-bootstrap";
 import { Carousel, Card } from "react-bootstrap";
 
 const Education = () => {
@@ -6,14 +6,14 @@ const Education = () => {
     <div className="container-education-bg" id="education">
       <Container className="container-education">
         <Row>
-          <h2>Education</h2>
+          <h2 className="fw-bolder">Education</h2>
         </Row>
         <Row>
-          <Col className="projects-column">
-            <Card style={{ width: "30rem", height: "22rem" }}>
+          <CardGroup>
+            <Card style={{ width: "35rem", height: "22rem" }}>
               <Card.Body>
-                <Card.Title className="card-title">University</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">
+                <Card.Title>University</Card.Title>
+                <Card.Subtitle className="mb-2">
                   2020-2023 (expected)
                 </Card.Subtitle>
                 <Card.Text>
@@ -31,14 +31,10 @@ const Education = () => {
                 </Card.Text>
               </Card.Body>
             </Card>
-          </Col>
-          <Col className="projects-column">
-            <Card style={{ width: "30rem", height: "22rem" }}>
+            <Card style={{ width: "35rem", height: "22rem" }}>
               <Card.Body>
-                <Card.Title className="card-title">High school</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">
-                  2017-2020
-                </Card.Subtitle>
+                <Card.Title>High School</Card.Title>
+                <Card.Subtitle className="mb-2">2017-2020</Card.Subtitle>
                 <Card.Text>
                   <ul class="content-list">
                     <li style={{ fontWeight: "bold" }}> High school diploma</li>
@@ -54,7 +50,7 @@ const Education = () => {
                 </Card.Text>
               </Card.Body>
             </Card>
-          </Col>
+          </CardGroup>
         </Row>
       </Container>
     </div>

@@ -4,42 +4,12 @@ body {
   overflow-x: hidden;
   font-family: Arial !important;
   scroll-behavior: smooth;
+  font-size: 16px;
+  color: azure;
+  background-color: #151515;
 }
 .app {
-  background-color: black;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: azure;
-  font-weight: bolder;
-}
-p {
-  color: azure;
-  font-size: 1.6rem;
-}
-h1 {
-  font-size: 3.5rem;
-}
-h2 {
-  font-size: 3.1rem;
-  padding: 2rem;
-}
-h3 {
-  font-size: 2.7rem;
-  padding: 2rem;
-}
-h4 {
-  font-size: 2.3rem;
-  padding: 2rem;
-}
-
-h5 {
-  font-size: 1.9rem;
-  padding: 2rem;
+  background-color: #151515;
 }
 
 .badge {
@@ -50,15 +20,59 @@ h5 {
   border: 1px solid azure;
   background-color: rgba(0, 0, 0, 0.6);
 }
+
 .navbar-scrolled {
   background-color: #151515;
   width: 100vw;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+
   transition: 0.4s ease-in;
+  border-bottom: 3px solid;
+  border-image: linear-gradient(
+      to left,
+      rgba(146, 99, 203, 1) 20%,
+      rgba(108, 181, 220, 1) 45%,
+      rgba(80, 101, 171, 1) 59%,
+      rgba(87, 44, 142, 1) 81%,
+      rgba(53, 30, 106, 1) 100%
+    )
+    1;
 }
 
+.navbar-container {
+  width: 100vw;
+  flex-direction: row;
+  display: flex;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-links-socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navbar-brand {
+  font-weight: 900;
+  text-align: center;
+  color: azure;
+  /* Fallback: Set a background color. */
+}
+
+.navbar-brand:hover {
+  background-image: linear-gradient(
+    to left,
+    rgba(146, 99, 203, 1) 20%,
+    rgba(108, 181, 220, 1) 45%,
+    rgba(80, 101, 171, 1) 59%,
+    rgba(87, 44, 142, 1) 81%
+  );
+  background-color: azure;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .navbar-notscrolled {
   background-color: transparent;
   width: 100vw;
@@ -69,7 +83,29 @@ h5 {
 }
 .nav-link {
   color: azure;
-  font-size: 1.5vw;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-link:hover {
+  color: azure;
+  opacity: 0.8;
+}
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 5rem;
+}
+.tiny-social-logo {
+  height: 60px;
+  aspect-ratio: 5/5;
+  background-color: azure;
+  border-radius: 2rem;
+  padding: 1px;
+  margin: 10px;
 }
 .banner-education-section {
   background-image: linear-gradient(
@@ -81,6 +117,7 @@ h5 {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+  padding-bottom: 1rem;
 }
 
 .banner {
@@ -106,10 +143,26 @@ h5 {
       rgba(53, 30, 106, 1) 100%
     );
   padding: 2em;
+  text-align: center;
 }
 
-.container-projects {
+.projects-container {
   text-align: center;
+}
+.project-card-footer {
+  border-top: 1px solid azure;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.project-links-section {
+  border-top: 1px solid azure;
+  text-align: justify;
+}
+
+.project-description {
+  text-align: justify;
 }
 
 .container-education-bg {
@@ -123,9 +176,31 @@ h5 {
 
 .container-education {
   text-align: center;
-  padding: 2em;
+  padding: 4em;
 }
 
+.card-body .card-subtitle {
+  color: azure;
+  opacity: 0.8;
+}
+
+.card-body .card-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card-body .card-link a:link {
+  border-radius: 1rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.6rem;
+}
+.card-body .card-link a:hover {
+  color: #6cb5dc;
+}
 .projects-column {
   display: flex;
   flex-direction: column;
@@ -184,19 +259,13 @@ h5 {
 }
 
 .card-body {
-  background-color: black;
+  background-color: #151515;
 }
-.card-title {
+.card-body .card-title {
   color: azure;
+  font-weight: bolder;
   font-size: 2rem;
-}
-
-.course-carousel {
-  align-items: center;
-}
-
-.course {
-  position: relative;
+  padding: 1rem;
 }
 
 .tabs {
@@ -218,6 +287,10 @@ h5 {
   overflow: hidden;
 }
 
+.footer {
+  background-color: #151515;
+  border-collapse: collapse;
+}
 /* -------------------------------- 
 
 Timeline components

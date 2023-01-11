@@ -11,7 +11,7 @@ const Skills = () => {
     <div className="skills-container-bg" id="skills">
       <Container className="skills-container">
         <Row>
-          <h2>Skills</h2>;
+          <h2 className="fw-bolder">Skills</h2>;
         </Row>
         <Row>
           <Tabs defaultActiveKey="technical" className="tab-bar-pill" fill>
@@ -64,13 +64,19 @@ const Technical = () => {
       <div>
         <h5>
           <Badge className="badge" bg="secondary">
+            Typescript
+          </Badge>
+          <Badge className="badge" bg="secondary">
+            Redux
+          </Badge>
+          <Badge className="badge" bg="secondary">
             Python
           </Badge>
           <Badge className="badge" bg="secondary">
             C/C++
           </Badge>
         </h5>{" "}
-        <Progress barClassName="skill-bar" value={40} />
+        <Progress barClassName="skill-bar" value={45} />
       </div>
     </Container>
   );

@@ -10,22 +10,21 @@ import "./App.css";
 import { Col, Container, Row } from "react-bootstrap";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import Footer from "./components/Footer";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const App = () => {
   return (
     <div className="app">
-      <Row>
-        <Col>
-          <NavBar />
-          <section className="banner-education-section">
-            <Banner />
-            <Education />
-          </section>
-          <Skills />
-          <Experience />
-          <Projects />
-        </Col>
-      </Row>
+      <NavBar />
+      <section className="banner-education-section">
+        <Banner />
+        <Education />
+      </section>
+      <Skills />
+      <Experience />
+      <Projects />
+      <Footer />
     </div>
   );
 };

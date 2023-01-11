@@ -1,35 +1,62 @@
-import { Container, Card, Row, Col } from "react-bootstrap";
-import projectBG from "../assets/img/banner-stars-bg.jpg";
+import { light } from "@mui/material/styles/createPalette";
+import {
+  Container,
+  Card,
+  Row,
+  Col,
+  ListGroup,
+  CardGroup,
+} from "react-bootstrap";
+import { Badge } from "reactstrap";
+import projectBG from "../assets/img/banner-bg.jpg";
 
 const Projects = () => {
   return (
     <div className="projects-container-bg" id="projects">
-      <Container className="container-projects">
+      <Container className="projects-container">
         <Row>
-          <h2>Projects</h2>
+          <h2 className="fw-bolder">Projects</h2>
         </Row>
         <Row>
           <Col className="projects-column">
-            <Card style={{}}>
+            <Card style={{ width: "40rem" }} border={light}>
               <Card.Img variant="top" src={projectBG} />
               <Card.Body>
-                <Card.Title>Personal CV website</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                <Card.Title>Personal website </Card.Title>
+                <Card.Text className="project-description">
+                  Personal CV website and my project for learning front-end
+                  development with React. This project uses React-Bootstrap
+                  library. Currently working on making the website mobile
+                  friendly. Hosted on GitHub Pages.
                 </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col className="projects-column">
-            <Card style={{}}>
-              <Card.Img variant="top" src={projectBG} />
-              <Card.Body className="card-body">
-                <Card.Title>Solar System Simulator</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
+                <Card.Link>
+                  <a
+                    href="https://github.com/ilonanmaa/ilonanmaa.github.io"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {" "}
+                    Repository
+                  </a>
+                  <a href="ilonanmaa.github.io"> Page</a>
+                </Card.Link>
+                <Card.Footer className="project-card-footer">
+                  <Badge className="badge" bg="secondary">
+                    React
+                  </Badge>
+
+                  <Badge className="badge" bg="secondary">
+                    HTML/CSS
+                  </Badge>
+
+                  <Badge className="badge" bg="secondary">
+                    Front-end
+                  </Badge>
+
+                  <Badge className="badge" bg="secondary">
+                    Git
+                  </Badge>
+                </Card.Footer>
               </Card.Body>
             </Card>
           </Col>
