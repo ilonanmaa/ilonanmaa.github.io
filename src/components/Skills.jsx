@@ -3,8 +3,10 @@ import { Progress } from "reactstrap";
 import SkillBadge from "./SkillBadge";
 import "react-multi-carousel/lib/styles.css";
 import "react-circular-progressbar/dist/styles.css";
+import { useState } from "react";
 
 const Skills = () => {
+  const [activeTab, setActiveTab] = useState("technical");
   return (
     <div className="skills-container-bg" id="skills">
       <Container className="skills-container">
@@ -28,18 +30,18 @@ const Skills = () => {
 
 const Technical = () => {
   return (
-    <Container>
-      <div>
+    <div>
+      <div className="mb-3">
         <SkillBadge text="Scala" />
         <Progress barClassName="skill-bar" value={90} />
       </div>
-      <div>
+      <div className="mb-3">
         <SkillBadge text="HTML/CSS" />
         <SkillBadge text="Javascript" />
 
         <Progress barClassName="skill-bar" value={75} />
       </div>
-      <div>
+      <div className="mb-3">
         <SkillBadge text="Git" />
         <SkillBadge text="Azure DevOps" />
 
@@ -53,7 +55,7 @@ const Technical = () => {
 
         <Progress barClassName="skill-bar" value={45} />
       </div>
-    </Container>
+    </div>
   );
 };
 

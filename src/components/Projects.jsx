@@ -24,7 +24,7 @@ const Projects = () => {
               <Card.Img variant="top" src={projectBG} />
               <Card.Body>
                 <Card.Title>Personal website </Card.Title>
-                <Card.Text>
+                <Card.Text className="lh-lg">
                   Personal CV website and my project for learning front-end
                   development with React. This project uses React-Bootstrap
                   library. Currently working on making the website mobile
