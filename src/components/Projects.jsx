@@ -9,6 +9,7 @@ import {
 } from "react-bootstrap";
 import { Badge } from "reactstrap";
 import projectBG from "../assets/img/banner-bg.jpg";
+import SkillBadge from "./SkillBadge";
 
 const Projects = () => {
   return (
@@ -23,7 +24,7 @@ const Projects = () => {
               <Card.Img variant="top" src={projectBG} />
               <Card.Body>
                 <Card.Title>Personal website </Card.Title>
-                <Card.Text className="project-description">
+                <Card.Text>
                   Personal CV website and my project for learning front-end
                   development with React. This project uses React-Bootstrap
                   library. Currently working on making the website mobile
@@ -41,21 +42,10 @@ const Projects = () => {
                   <a href="ilonanmaa.github.io"> Page</a>
                 </Card.Link>
                 <Card.Footer className="project-card-footer">
-                  <Badge className="badge" bg="secondary">
-                    React
-                  </Badge>
-
-                  <Badge className="badge" bg="secondary">
-                    HTML/CSS
-                  </Badge>
-
-                  <Badge className="badge" bg="secondary">
-                    Front-end
-                  </Badge>
-
-                  <Badge className="badge" bg="secondary">
-                    Git
-                  </Badge>
+                  <SkillBadge text="React" />
+                  <SkillBadge text="HTML/CSS" />
+                  <SkillBadge text="Front-end" />
+                  <SkillBadge text="Git" />
                 </Card.Footer>
               </Card.Body>
             </Card>
