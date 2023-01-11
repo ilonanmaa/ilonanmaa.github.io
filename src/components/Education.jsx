@@ -6,18 +6,18 @@ const Education = () => {
     <div className="container-education-bg" id="education">
       <Container className="container-education">
         <Row>
-          <h2 className="fw-bolder">Education</h2>
+          <h2 className="fw-bolder mb-4">Education</h2>
         </Row>
         <Row>
           <CardGroup>
-            <Card style={{ width: "35rem", height: "22rem" }}>
+            <Card className="education-card">
               <Card.Body>
-                <Card.Title>University</Card.Title>
-                <Card.Subtitle className="mb-2">
+                <Card.Title className="fs-4">University</Card.Title>
+                <Card.Subtitle className="mb-3">
                   2020-2023 (expected)
                 </Card.Subtitle>
                 <Card.Text>
-                  <ul className="content-list">
+                  <ul className="content-list fs-5">
                     <li style={{ fontWeight: "bold" }}>
                       Bachelor of Science and Technology
                     </li>
@@ -31,12 +31,12 @@ const Education = () => {
                 </Card.Text>
               </Card.Body>
             </Card>
-            <Card style={{ width: "35rem", height: "22rem" }}>
+            <Card className="education-card">
               <Card.Body>
-                <Card.Title>High School</Card.Title>
-                <Card.Subtitle className="mb-2">2017-2020</Card.Subtitle>
+                <Card.Title className="fs-4">High School</Card.Title>
+                <Card.Subtitle className="mb-3">2017-2020</Card.Subtitle>
                 <Card.Text>
-                  <ul class="content-list">
+                  <ul class="content-list fs-5">
                     <li style={{ fontWeight: "bold" }}> High school diploma</li>
                     <ul>
                       <li>

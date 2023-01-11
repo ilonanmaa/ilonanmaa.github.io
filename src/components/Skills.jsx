@@ -31,17 +31,17 @@ const Skills = () => {
 const Technical = () => {
   return (
     <div>
-      <div className="mb-3">
+      <div className="mb-4">
         <SkillBadge text="Scala" />
         <Progress barClassName="skill-bar" value={90} />
       </div>
-      <div className="mb-3">
+      <div className="mb-4">
         <SkillBadge text="HTML/CSS" />
         <SkillBadge text="Javascript" />
 
         <Progress barClassName="skill-bar" value={75} />
       </div>
-      <div className="mb-3">
+      <div className="mb-4">
         <SkillBadge text="Git" />
         <SkillBadge text="Azure DevOps" />
 

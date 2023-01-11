@@ -16,39 +16,41 @@ const Projects = () => {
     <div className="projects-container-bg" id="projects">
       <Container className="projects-container">
         <Row>
-          <h2 className="fw-bolder">Projects</h2>
+          <h2 className="fw-bolder mb-4">Projects</h2>
         </Row>
         <Row>
           <Col className="projects-column">
-            <Card style={{ width: "40rem" }} border={light}>
-              <Card.Img variant="top" src={projectBG} />
-              <Card.Body>
-                <Card.Title>Personal website </Card.Title>
-                <Card.Text className="lh-lg">
-                  Personal CV website and my project for learning front-end
-                  development with React. This project uses React-Bootstrap
-                  library. Currently working on making the website mobile
-                  friendly. Hosted on GitHub Pages.
-                </Card.Text>
-                <Card.Link>
-                  <a
-                    href="https://github.com/ilonanmaa/ilonanmaa.github.io"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {" "}
-                    Repository
-                  </a>
-                  <a href="ilonanmaa.github.io"> Page</a>
-                </Card.Link>
-                <Card.Footer className="project-card-footer">
-                  <SkillBadge text="React" />
-                  <SkillBadge text="HTML/CSS" />
-                  <SkillBadge text="Front-end" />
-                  <SkillBadge text="Git" />
-                </Card.Footer>
-              </Card.Body>
-            </Card>
+            <CardGroup>
+              <Card border={light} className="project-card">
+                <Card.Img variant="top" src={projectBG} />
+                <Card.Body>
+                  <Card.Title className="fs-4">Personal website </Card.Title>
+                  <Card.Text className="lh-lg fs-5">
+                    Personal CV website and my project for learning front-end
+                    development with React. This project uses React-Bootstrap
+                    library. Currently working on making the website mobile
+                    friendly. Hosted on GitHub Pages.
+                  </Card.Text>
+                  <Card.Link>
+                    <a
+                      href="https://github.com/ilonanmaa/ilonanmaa.github.io"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {" "}
+                      Repository
+                    </a>
+                    <a href="ilonanmaa.github.io"> Page</a>
+                  </Card.Link>
+                  <Card.Footer className="project-card-footer">
+                    <SkillBadge text="React" />
+                    <SkillBadge text="HTML/CSS" />
+                    <SkillBadge text="Front-end" />
+                    <SkillBadge text="Git" />
+                  </Card.Footer>
+                </Card.Body>
+              </Card>
+            </CardGroup>
           </Col>
         </Row>
       </Container>
