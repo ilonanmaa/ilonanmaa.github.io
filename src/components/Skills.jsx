@@ -1,4 +1,4 @@
-import { Col, Container, Row, Tabs, Tab, Badge } from "react-bootstrap";
+import { Col, Container, Row, Tabs, Tab, Badge, Nav } from "react-bootstrap";
 import { Progress } from "reactstrap";
 import SkillBadge from "./SkillBadge";
 import "react-multi-carousel/lib/styles.css";
@@ -10,19 +10,21 @@ const Skills = () => {
   return (
     <div className="skills-container-bg" id="skills">
       <Container className="skills-container">
-        <Row>
-          <h2 className="fw-bolder">Skills</h2>;
-        </Row>
-        <Row>
-          <Tabs defaultActiveKey="technical" className="tab-bar-pill" fill>
-            <Tab eventKey="technical" title="Technical" className="tabs">
-              <Technical />
-            </Tab>
-            <Tab eventKey="languages" title="Languages" className="tabs">
-              <Technical />
-            </Tab>
-          </Tabs>
-        </Row>
+        <h2 className="fw-bolder mb-5">Skills</h2>
+        <Tabs
+          defaultActiveKey="technical"
+          className="tab-bar-pill px-5"
+          fill={true}
+          justify={true}
+          variant="pills"
+        >
+          <Tab eventKey="technical" title="Technical">
+            <Technical />
+          </Tab>
+          <Tab eventKey="languages" title="Languages" className="language-tab">
+            <Technical />
+          </Tab>
+        </Tabs>
       </Container>
     </div>
   );
@@ -30,7 +32,7 @@ const Skills = () => {
 
 const Technical = () => {
   return (
-    <div>
+    <div className="p-4">
       <div className="mb-4">
         <SkillBadge text="Scala" />
         <Progress barClassName="skill-bar" value={90} />
