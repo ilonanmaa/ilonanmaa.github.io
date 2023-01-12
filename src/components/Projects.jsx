@@ -31,17 +31,26 @@ const Projects = () => {
                     library. Currently working on making the website mobile
                     friendly. Hosted on GitHub Pages.
                   </Card.Text>
-                  <Card.Link>
-                    <a
+                  <div className="project-links">
+                    <Card.Link
                       href="https://github.com/ilonanmaa/ilonanmaa.github.io"
                       target="_blank"
                       rel="noopener noreferrer"
+                      className="fs-5 mb-3"
                     >
                       {" "}
                       Repository
-                    </a>
-                    <a href="ilonanmaa.github.io"> Page</a>
-                  </Card.Link>
+                    </Card.Link>
+                    <Card.Link
+                      href="https://github.com/ilonanmaa/ilonanmaa.github.io"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="fs-5 mb-3"
+                    >
+                      {" "}
+                      Page
+                    </Card.Link>
+                  </div>
                   <Card.Footer className="project-card-footer">
                     <SkillBadge text="React" />
                     <SkillBadge text="HTML/CSS" />
