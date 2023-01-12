@@ -19,12 +19,12 @@ const Education = () => {
           <CardGroup>
             <Card className="education-card">
               <Card.Body>
-                <Card.Title className="fs-4">University</Card.Title>
+                <Card.Title className="fs-4 fw-bolder">University</Card.Title>
                 <Card.Subtitle className="mb-3">
                   2020-2023 (expected)
                 </Card.Subtitle>
-                <ul className="content-list fs-5">
-                  <li style={{ fontWeight: "bold" }}>
+                <ul className="content-list fs-5 lh-lg">
+                  <li className="fw-bolder">
                     Bachelor of Science and Technology
                   </li>
                   <ul>
@@ -44,10 +44,10 @@ const Education = () => {
             </Card>
             <Card className="education-card">
               <Card.Body>
-                <Card.Title className="fs-4">High School</Card.Title>
+                <Card.Title className="fs-4 fw-bolder">High School</Card.Title>
                 <Card.Subtitle className="mb-3">2017-2020</Card.Subtitle>
-                <ul className="content-list fs-5">
-                  <li style={{ fontWeight: "bold" }}> High school diploma</li>
+                <ul className="content-list fs-5 lh-lg">
+                  <li className="fw-bolder"> High school diploma</li>
                   <ul>
                     <li>
                       German Language Diploma II (Deutsches Sprachdiplom - DSD

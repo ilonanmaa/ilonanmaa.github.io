@@ -21,9 +21,11 @@ const Skills = () => {
           <Tab eventKey="technical" title="Technical">
             <Technical />
           </Tab>
-          <Tab eventKey="languages" title="Languages" className="language-tab">
-            <Technical />
-          </Tab>
+          <Tab
+            eventKey="languages"
+            title="Languages"
+            className="language-tab"
+          ></Tab>
         </Tabs>
       </Container>
     </div>

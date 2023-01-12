@@ -31,44 +31,38 @@ const NavBar = () => {
       className={scrolled ? "navbar-scrolled" : "navbar-notscrolled"}
       fixed="top"
     >
-      <div className="navbar-container">
-        <Navbar.Brand className="fs-1" href="/">
-          ILONA
-        </Navbar.Brand>
-        <div className="navbar-links-socials">
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <div>
-              <Nav className="me-auto">
-                <Nav.Link className="nav-link fs-4" href="#home">
-                  Home
-                </Nav.Link>
-                <Nav.Link className="nav-link fs-4" href="#education">
-                  Education
-                </Nav.Link>
-                <Nav.Link className="nav-link fs-4" href="#experience">
-                  Experience
-                </Nav.Link>
-                <Nav.Link className="nav-link fs-4" href="#skills">
-                  Skills
-                </Nav.Link>
-                <Nav.Link className="nav-link fs-4" href="#projects">
-                  Projects
-                </Nav.Link>
-              </Nav>
-            </div>
-            <div className="social-icons">
-              <a
-                href="https://github.com/ilonanmaa"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src={githubIcon} alt="" className="tiny-social-logo" />
-              </a>
-            </div>
-          </Navbar.Collapse>
-        </div>
-      </div>
+      <Navbar.Brand className="fs-1" href="/">
+        ILONA
+      </Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav>
+          <Nav.Link className="nav-link fs-4" href="#home">
+            Home
+          </Nav.Link>
+          <Nav.Link className="nav-link fs-4" href="#education">
+            Education
+          </Nav.Link>
+          <Nav.Link className="nav-link fs-4" href="#experience">
+            Experience
+          </Nav.Link>
+          <Nav.Link className="nav-link fs-4" href="#skills">
+            Skills
+          </Nav.Link>
+          <Nav.Link className="nav-link fs-4" href="#projects">
+            Projects
+          </Nav.Link>
+        </Nav>
+        <Nav>
+          <Nav.Link
+            href="https://github.com/ilonanmaa"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={githubIcon} alt="" className="tiny-social-logo" />
+          </Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
     </Navbar>
   );
 };

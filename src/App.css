@@ -1,14 +1,34 @@
+:root {
+  --desktop-fs: 16px;
+  --mobile-fs: 14px;
+}
+
 html,
 body {
   width: 100%;
   overflow-x: hidden;
   font-family: Arial !important;
   scroll-behavior: smooth;
-  font-size: 16px;
+  font-size: var(--desktop-fs);
   color: azure;
   background-color: #151515;
   position: relative;
 }
+
+@media only screen and (max-width: 480px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+    font-family: Arial !important;
+    scroll-behavior: smooth;
+    font-size: var(--mobile-fs);
+    color: azure;
+    background-color: #151515;
+    position: relative;
+  }
+}
+
 .app {
   background-color: #151515;
 }
@@ -26,7 +46,7 @@ body {
   width: 100vw;
   display: block;
 
-  transition: 0.4s ease-in;
+  transition: 0.3s ease-in;
   border-bottom: 3px solid;
   border-image: linear-gradient(
       to left,
@@ -45,24 +65,24 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  transition: 0.4s ease-in;
+  transition: 0.3s ease-in;
 }
 
-.navbar-container {
-  width: 100vw;
-  flex-direction: row;
+.navbar {
   display: flex;
+  flex-direction: row;
+  width: 100vw;
   padding-left: 2rem;
   padding-right: 2rem;
-  justify-content: space-between;
   align-items: center;
 }
-.navbar-links-socials {
+
+.navbar-collapse {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  align-items: center;
 }
+
 .navbar-brand {
   font-weight: 900;
   text-align: center;
@@ -99,13 +119,6 @@ body {
   opacity: 0.75;
 }
 
-.social-icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  margin-right: 5rem;
-}
 .tiny-social-logo {
   height: 60px;
   aspect-ratio: 5/5;
@@ -318,6 +331,8 @@ body {
 .tab-bar-pill .nav-link {
   border-radius: 4rem;
   border: 1px solid azure;
+  font-weight: bold;
+  color: azure;
 }
 
 .tab-bar-pill .nav-link:hover {
@@ -368,4 +383,14 @@ body {
 .footer {
   background-color: #151515;
   border-collapse: collapse;
+  border-top: 3px solid;
+  border-image: linear-gradient(
+      to left,
+      rgba(146, 99, 203, 1) 20%,
+      rgba(108, 181, 220, 1) 45%,
+      rgba(80, 101, 171, 1) 59%,
+      rgba(87, 44, 142, 1) 81%,
+      rgba(53, 30, 106, 1) 100%
+    )
+    1;
 }

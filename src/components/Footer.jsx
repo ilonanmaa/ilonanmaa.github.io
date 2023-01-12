@@ -1,16 +1,18 @@
-import { Col, Container } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 
 const Footer = () => {
   return (
     <div className="footer">
-      <Container>
+      <Row className=" d-flex justify-content-evenly">
         <Col>
-          <p>
+          <h4>Image credits</h4>
+          <p className="fs-6">
             Banner image by{" "}
             <a href="https://www.freepik.com/free-vector/gradient-galaxy-background_14658088.htm#query=space&position=3&from_view=search&track=sph">
               Freepik
             </a>
-            Stars background photo by{" "}
+            <br />
+            Night sky stars background photo by{" "}
             <a href="https://unsplash.com/@mumbolicious?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
               Samuel Richard
             </a>{" "}
@@ -20,8 +22,10 @@ const Footer = () => {
             </a>
           </p>
         </Col>
-        <Col></Col>
-      </Container>
+        <Col>
+          <h4>Contact</h4>
+        </Col>
+      </Row>
     </div>
   );
 };
