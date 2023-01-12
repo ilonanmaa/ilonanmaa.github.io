@@ -25,13 +25,6 @@ const NavBar = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const handleClickScroll = ({ clicked }) => {
-    const element = document.getElementById(clicked);
-    if (element) {
-      element.scrollIntoView();
-    }
-  };
-
   return (
     <Navbar
       expand="lg"
@@ -39,33 +32,27 @@ const NavBar = () => {
       fixed="top"
     >
       <div className="navbar-container">
-        <Navbar.Brand className="fs-1">ILONA</Navbar.Brand>
+        <Navbar.Brand className="fs-1" href="/">
+          ILONA
+        </Navbar.Brand>
         <div className="navbar-links-socials">
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <div>
               <Nav className="me-auto">
-                <Nav.Link
-                  className="nav-link fs-4"
-                  href="/"
-                  onClick={handleClickScroll("banner")}
-                >
+                <Nav.Link className="nav-link fs-4" href="#home">
                   Home
                 </Nav.Link>
-                <Nav.Link
-                  className="nav-link fs-4"
-                  href="/education"
-                  onClick={handleClickScroll("education")}
-                >
+                <Nav.Link className="nav-link fs-4" href="#education">
                   Education
                 </Nav.Link>
-                <Nav.Link className="nav-link fs-4" href="/experience">
+                <Nav.Link className="nav-link fs-4" href="#experience">
                   Experience
                 </Nav.Link>
-                <Nav.Link className="nav-link fs-4" href="/skills">
+                <Nav.Link className="nav-link fs-4" href="#skills">
                   Skills
                 </Nav.Link>
-                <Nav.Link className="nav-link fs-4" href="/projects">
+                <Nav.Link className="nav-link fs-4" href="#projects">
                   Projects
                 </Nav.Link>
               </Nav>
@@ -77,13 +64,6 @@ const NavBar = () => {
                 rel="noopener noreferrer"
               >
                 <img src={githubIcon} alt="" className="tiny-social-logo" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/ilonama/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src={linkedinIcon} alt="" className="tiny-social-logo" />
               </a>
             </div>
           </Navbar.Collapse>

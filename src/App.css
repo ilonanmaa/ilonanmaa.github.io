@@ -7,6 +7,7 @@ body {
   font-size: 16px;
   color: azure;
   background-color: #151515;
+  position: relative;
 }
 .app {
   background-color: #151515;
@@ -36,6 +37,15 @@ body {
       rgba(53, 30, 106, 1) 100%
     )
     1;
+}
+
+.navbar-notscrolled {
+  background-color: transparent;
+  width: 100vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 0.4s ease-in;
 }
 
 .navbar-container {
@@ -72,25 +82,23 @@ body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.navbar-notscrolled {
-  background-color: transparent;
-  width: 100vw;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  transition: 0.4s ease-in;
-}
-.nav-link {
+
+.navbar .nav-link {
   color: azure;
   font-weight: bold;
   margin-left: auto;
   margin-right: auto;
 }
 
-.nav-link:hover {
+.navbar .nav-link:hover {
   color: azure;
-  opacity: 0.8;
+  opacity: 0.75;
 }
+.navbar .nav-link.active {
+  color: azure;
+  opacity: 0.75;
+}
+
 .social-icons {
   display: flex;
   flex-direction: row;
@@ -145,6 +153,15 @@ body {
     padding: 2rem;
   }
 }
+
+.modal {
+  color: black;
+}
+
+.modal-open {
+  padding-right: 0 !important;
+}
+
 /****Projects CSS****/
 
 .projects-container-bg {
@@ -195,6 +212,12 @@ body {
   align-items: center;
 }
 
+.project-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 /****Cards CSS****/
 
 .card-body .card-text {
@@ -242,7 +265,7 @@ body {
 .skills-container {
   background-color: #151515;
   text-align: center;
-  padding-top: 2rem;
+  padding: 3rem;
   border-radius: 4rem;
 }
 
@@ -259,9 +282,9 @@ body {
     padding-right: 0.5rem;
   }
   .skills-container {
-    text-align: center;
-    padding-top: 2rem;
     background-color: #151515;
+    text-align: center;
+    padding: 2rem;
     border-radius: 4rem;
   }
 }
@@ -292,23 +315,14 @@ body {
   padding: 2rem;
   overflow: hidden;
 }
-
-.tab-bar-pill {
-  width: 80%;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 2rem;
-  background-color: rgb(255 255 255 / 10%);
-  overflow: hidden;
+.tab-bar-pill .nav-link {
+  border-radius: 4rem;
+  border: 1px solid azure;
 }
 
 .tab-bar-pill .nav-link:hover {
-  background-color: transparent;
   background: linear-gradient(
-    90deg,
+    to left,
     rgba(146, 99, 203, 1) 20%,
     rgba(108, 181, 220, 1) 45%,
     rgba(80, 101, 171, 1) 59%,
@@ -317,10 +331,9 @@ body {
   );
 }
 
-.tab-bar-pill .nav-link:active {
-  background-color: transparent;
+.tab-bar-pill .nav-link.active {
   background: linear-gradient(
-    90deg,
+    to left,
     rgba(146, 99, 203, 1) 20%,
     rgba(108, 181, 220, 1) 45%,
     rgba(80, 101, 171, 1) 59%,
@@ -328,6 +341,7 @@ body {
     rgba(53, 30, 106, 1) 100%
   );
 }
+
 /****Badge CSS ****/
 
 .badge {

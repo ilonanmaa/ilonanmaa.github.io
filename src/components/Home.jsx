@@ -1,8 +1,12 @@
+import Banner from "./Banner";
+import Education from "./Education";
+
 const Home = () => {
   return (
-    <div id="home">
-      <p>Home</p>
-    </div>
+    <section className="banner-education-section">
+      <Banner />
+      <Education />
+    </section>
   );
 };
 
