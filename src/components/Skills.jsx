@@ -10,7 +10,7 @@ const Skills = () => {
   const [activeTab, setActiveTab] = useState("technical");
   return (
     <div className="skills-container-bg" id="skills">
-      <Container className="skills-container">
+      <Container className="skills-container bg-dark">
         <h2 className="fw-bolder mb-5 text-uppercase">Skills</h2>
         <Tab.Container>
           <Nav

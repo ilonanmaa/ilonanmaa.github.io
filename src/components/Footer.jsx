@@ -2,11 +2,11 @@ import { Col, Row } from "react-bootstrap";
 
 const Footer = () => {
   return (
-    <div className="footer">
-      <Row className=" d-flex justify-content-evenly">
-        <Col>
-          <h4>Image credits</h4>
-          <p className="fs-6">
+    <div className="footer p-2 bg-dark">
+      <Row className="d-flex flex-row justify-content-center w-75 mx-auto py-4">
+        <Col className="text-start col col-md-auto px-2">
+          <h4 className="fw-bold text-uppercase">Image credits</h4>
+          <p className="fs-6 py-2 lh-lg">
             Banner image by{" "}
             <a
               href="https://www.freepik.com/free-vector/gradient-galaxy-background_14658088.htm#query=space&position=3&from_view=search&track=sph"
@@ -34,8 +34,8 @@ const Footer = () => {
             </a>
           </p>
         </Col>
-        <Col>
-          <h4>Contact</h4>
+        <Col className="text-start col col-md-auto px-2">
+          <h4 className="fw-bold text-uppercase">Contact</h4>
         </Col>
       </Row>
     </div>

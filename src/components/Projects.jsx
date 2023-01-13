@@ -23,7 +23,7 @@ const Projects = () => {
             <CardGroup>
               <Card border={light} className="project-card">
                 <Card.Img variant="top" src={projectBG} />
-                <Card.Body>
+                <Card.Body className="bg-dark">
                   <Card.Title className="fs-4 fw-bolder p-2 text-center">
                     Personal website{" "}
                   </Card.Title>

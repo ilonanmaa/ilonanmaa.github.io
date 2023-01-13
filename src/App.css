@@ -41,11 +41,11 @@ body {
       rgba(87, 44, 142, 1) 81%,
       rgba(53, 30, 106, 1) 100%
     )
-    1;
+    1 !important;
 }
 
 .navbar-notscrolled {
-  background-color: transparent;
+  background-color: transparent !important;
   display: block;
   transition: 0.3s ease-in;
 }
@@ -75,13 +75,16 @@ body {
   font-weight: bold;
 }
 
-.navbar .nav-link:hover {
+.navbar .nav-link:hover,
+.navbar .btn-link:hover {
   color: inherit;
-  opacity: 0.75;
+  opacity: 0.8;
+  background-color: transparent;
 }
-.navbar .nav-link.active {
+.navbar .nav-link.active,
+.navbar .btn-link.active {
   color: inherit;
-  opacity: 0.75;
+  opacity: 0.8;
 }
 
 .tiny-social-logo {
@@ -168,12 +171,25 @@ body {
   background-color: #151515;
 }
 
+.card {
+  border: 3px solid;
+  border-image: linear-gradient(
+      to bottom,
+      rgba(146, 99, 203, 1) 20%,
+      rgba(108, 181, 220, 1) 45%,
+      rgba(80, 101, 171, 1) 59%,
+      rgba(87, 44, 142, 1) 81%,
+      rgba(53, 30, 106, 1) 100%
+    )
+    1;
+}
+
 /****Skills CSS****/
 
 .skills-container-bg {
   background-color: black;
   background-image: url("./assets/img/banner-stars-bg.jpg");
-  background-position: bottom center;
+  background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 2rem;
@@ -217,6 +233,7 @@ body {
 .tab-bar-pill .nav-link {
   font-weight: bold;
   color: azure;
+  background-color: transparent;
 }
 
 .rounded {
@@ -253,6 +270,11 @@ body {
     rgba(87, 44, 142, 1) 81%,
     rgba(53, 30, 106, 1) 100%
   );
+}
+
+.languages-key .nav-link:hover,
+.technical-key .nav-link:hover {
+  opacity: 0.8;
 }
 
 /****Badge CSS ****/

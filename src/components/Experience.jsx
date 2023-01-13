@@ -1,6 +1,5 @@
 import { Container, Modal, Row, CardGroup, Button } from "react-bootstrap";
 import { Carousel, Card } from "react-bootstrap";
-import bG from "../assets/img/banner-bg.png";
 import { useState } from "react";
 
 const Experience = () => {
@@ -13,7 +12,7 @@ const Experience = () => {
         <Row>
           <CardGroup>
             <Card>
-              <Card.Body>
+              <Card.Body className="bg-dark">
                 <Card.Title className="fs-4 fw-bolder p-2">
                   Software developer
                 </Card.Title>
@@ -33,7 +32,7 @@ const Experience = () => {
               </Card.Body>
             </Card>
             <Card>
-              <Card.Body>
+              <Card.Body className="bg-dark">
                 <Card.Title className="fs-4 fw-bolder p-2">
                   Teaching Assistant TA
                 </Card.Title>
@@ -50,7 +49,7 @@ const Experience = () => {
               </Card.Body>
             </Card>
             <Card>
-              <Card.Body>
+              <Card.Body className="bg-dark">
                 <Card.Title className="fs-4 fw-bolder p-2">
                   Stablehand
                 </Card.Title>

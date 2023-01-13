@@ -1,6 +1,5 @@
 import { Container, Modal, Row, CardGroup, Button } from "react-bootstrap";
 import { Carousel, Card } from "react-bootstrap";
-import bG from "../assets/img/banner-bg.png";
 import { useState } from "react";
 
 const Education = () => {
@@ -10,20 +9,20 @@ const Education = () => {
   const handleShow = () => setShow(true);
 
   return (
-    <div className="text-center" id="education">
-      <Container className="p-4">
+    <div id="education">
+      <Container className=" text-center p-4">
         <Row>
           <h2 className="fw-bolder mb-4 text-uppercase">Education</h2>
         </Row>
         <Row>
           <CardGroup>
-            <Card className="education-card">
-              <Card.Body>
+            <Card>
+              <Card.Body className="bg-dark">
                 <Card.Title className="fs-4 fw-bolder p-2">
                   Bachelor of Science in Technology
                 </Card.Title>
                 <Card.Subtitle className="mb-3 opacity-75">
-                  2020-2023 (expected)
+                  09/2020-06/2023 (expected)
                 </Card.Subtitle>
                 <ul className="text-start fs-5 lh-lg">
                   <li className="fw-bolder">Aalto University</li>
@@ -33,7 +32,7 @@ const Education = () => {
                   </ul>
                   <li>Espoo, Finland</li>
                 </ul>
-                <Card.Footer className="education-card-footer">
+                <Card.Footer className="bg-dark border-0">
                   {" "}
                   <Button onClick={handleShow} variant="link" className="fs-5">
                     Relevant Courses
@@ -41,13 +40,13 @@ const Education = () => {
                 </Card.Footer>
               </Card.Body>
             </Card>
-            <Card className="education-card">
-              <Card.Body>
+            <Card>
+              <Card.Body className="bg-dark">
                 <Card.Title className="fs-4 fw-bolder p-2">
                   High School Diploma
                 </Card.Title>
                 <Card.Subtitle className="mb-3 opacity-75">
-                  2017-2020
+                  08/2017-06/2020
                 </Card.Subtitle>
                 <ul className="text-start fs-5 lh-lg">
                   <li className="fw-bolder"> Ressu High School</li>
