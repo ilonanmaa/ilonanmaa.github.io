@@ -31,7 +31,7 @@ body {
 .navbar-scrolled {
   background-color: #151515;
   display: block;
-  transition: 0.3s ease-in;
+  transition: 0.1s ease-in;
   border-bottom: 3px solid;
   border-image: linear-gradient(
       to left,
@@ -47,7 +47,7 @@ body {
 .navbar-notscrolled {
   background-color: transparent !important;
   display: block;
-  transition: 0.3s ease-in;
+  transition: 0.1s ease-in;
 }
 
 .navbar-brand {
@@ -94,6 +94,16 @@ body {
   border-radius: 2rem;
   padding: 1px;
   margin: 10px;
+}
+
+.offcanvas-header {
+  background-image: linear-gradient(
+    to left,
+    rgba(146, 99, 203, 1) 20%,
+    rgba(108, 181, 220, 1) 45%,
+    rgba(80, 101, 171, 1) 59%,
+    rgba(87, 44, 142, 1) 81%
+  );
 }
 /****Banner and Education component CSS****/
 

@@ -109,66 +109,66 @@ const NavBar = () => {
       <Navbar.Brand className="fs-1" href="/">
         ILONA
       </Navbar.Brand>
-      <>
-        <Button variant="primary" className="d-lg-none" onClick={handleShow}>
-          Launch
-        </Button>
+      <Button
+        variant="link"
+        className="d-lg-none nav-link fs-4 text-uppercase"
+        onClick={handleShow}
+      >
+        Menu
+      </Button>
 
-        <Offcanvas
-          show={show}
-          onHide={handleClose}
-          responsive="lg"
-          placement="end"
-          className="w-75"
-          scroll={false}
-          backdrop={true}
-        >
-          <Offcanvas.Header closeButton>
-            <Offcanvas.Title className="text-primary">
-              Responsive offcanvas
-            </Offcanvas.Title>
-          </Offcanvas.Header>
-          <Offcanvas.Body className="bg-dark">
-            <Nav>
-              <Nav.Link
-                className="nav-link fs-4"
-                href="#home"
-                onClick={() => handleClose()}
-              >
-                Home
-              </Nav.Link>
-              <Nav.Link
-                className="nav-link fs-4"
-                href="#education"
-                onClick={() => handleClose()}
-              >
-                Education
-              </Nav.Link>
-              <Nav.Link
-                className="nav-link fs-4"
-                href="#experience"
-                onClick={() => handleClose()}
-              >
-                Experience
-              </Nav.Link>
-              <Nav.Link
-                className="nav-link fs-4"
-                href="#skills"
-                onClick={() => handleClose()}
-              >
-                Skills
-              </Nav.Link>
-              <Nav.Link
-                className="nav-link fs-4"
-                href="#projects"
-                onClick={() => handleClose()}
-              >
-                Projects
-              </Nav.Link>
-            </Nav>
-          </Offcanvas.Body>
-        </Offcanvas>
-      </>
+      <Offcanvas
+        show={show}
+        onHide={handleClose}
+        responsive="lg"
+        placement="end"
+        className="w-75"
+      >
+        <Offcanvas.Header closeButton className="bg-dark">
+          <Offcanvas.Title className="fw-bold text-uppercase">
+            Menu
+          </Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body className="bg-dark justify-content-end align-items-center">
+          <Nav>
+            <Nav.Link
+              className="nav-link fs-4 fw-bold"
+              href="#home"
+              onClick={() => handleClose()}
+            >
+              Home
+            </Nav.Link>
+            <Nav.Link
+              className="nav-link fs-4 fw-bold"
+              href="#education"
+              onClick={() => handleClose()}
+            >
+              Education
+            </Nav.Link>
+            <Nav.Link
+              className="nav-link fs-4 fw-bold"
+              href="#experience"
+              onClick={() => handleClose()}
+            >
+              Experience
+            </Nav.Link>
+            <Nav.Link
+              className="nav-link fs-4 fw-bold"
+              href="#skills"
+              onClick={() => handleClose()}
+            >
+              Skills
+            </Nav.Link>
+            <Nav.Link
+              className="nav-link fs-4 fw-bold"
+              href="#projects"
+              onClick={() => handleClose()}
+            >
+              Projects
+            </Nav.Link>
+          </Nav>
+        </Offcanvas.Body>
+      </Offcanvas>
     </Navbar>
   );
 };

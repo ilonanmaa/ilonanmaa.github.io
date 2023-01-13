@@ -49,7 +49,7 @@ const Skills = () => {
 
 const Technical = () => {
   return (
-    <div className="p-4">
+    <div className="py-4 px-2">
       <div className="mb-4">
         <SkillBadge text="Scala" />
         <Progress barClassName="skill-bar" value={90} />
