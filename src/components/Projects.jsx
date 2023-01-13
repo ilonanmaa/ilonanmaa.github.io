@@ -33,8 +33,7 @@ const Projects = () => {
                   >
                     Personal CV website and my project for learning front-end
                     development with React. This project uses React-Bootstrap
-                    library. Currently working on making the website mobile
-                    friendly. Hosted on GitHub Pages.
+                    library. Hosted on GitHub Pages.
                   </Card.Text>
                   <div className="d-flex flex-row justify-content-between">
                     <Card.Link
