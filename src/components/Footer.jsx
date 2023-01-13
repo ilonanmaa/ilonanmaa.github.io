@@ -8,16 +8,28 @@ const Footer = () => {
           <h4>Image credits</h4>
           <p className="fs-6">
             Banner image by{" "}
-            <a href="https://www.freepik.com/free-vector/gradient-galaxy-background_14658088.htm#query=space&position=3&from_view=search&track=sph">
+            <a
+              href="https://www.freepik.com/free-vector/gradient-galaxy-background_14658088.htm#query=space&position=3&from_view=search&track=sph"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Freepik
             </a>
             <br />
             Night sky stars background photo by{" "}
-            <a href="https://unsplash.com/@mumbolicious?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+            <a
+              href="https://unsplash.com/@mumbolicious?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Samuel Richard
             </a>{" "}
             on{" "}
-            <a href="https://unsplash.com/photos/UWY8nGROvbk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+            <a
+              href="https://unsplash.com/photos/UWY8nGROvbk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Unsplash
             </a>
           </p>
