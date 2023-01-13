@@ -10,29 +10,28 @@ const Education = () => {
   const handleShow = () => setShow(true);
 
   return (
-    <div className="container-education-bg" id="education">
-      <Container className="container-education">
+    <div className="text-center" id="education">
+      <Container className="p-4">
         <Row>
-          <h2 className="fw-bolder mb-4">Education</h2>
+          <h2 className="fw-bolder mb-4 text-uppercase">Education</h2>
         </Row>
         <Row>
           <CardGroup>
             <Card className="education-card">
               <Card.Body>
-                <Card.Title className="fs-4 fw-bolder">University</Card.Title>
-                <Card.Subtitle className="mb-3">
+                <Card.Title className="fs-4 fw-bolder p-2">
+                  Bachelor of Science in Technology
+                </Card.Title>
+                <Card.Subtitle className="mb-3 opacity-75">
                   2020-2023 (expected)
                 </Card.Subtitle>
-                <ul className="content-list fs-5 lh-lg">
-                  <li className="fw-bolder">
-                    Bachelor of Science and Technology
-                  </li>
+                <ul className="text-start fs-5 lh-lg">
+                  <li className="fw-bolder">Aalto University</li>
                   <ul>
                     <li>Major in computer science</li>
                     <li>Minor in quantum technology</li>
                   </ul>
-                  <li>Aalto University</li>
-                  <li>Espoo</li>
+                  <li>Espoo, Finland</li>
                 </ul>
                 <Card.Footer className="education-card-footer">
                   {" "}
@@ -44,18 +43,21 @@ const Education = () => {
             </Card>
             <Card className="education-card">
               <Card.Body>
-                <Card.Title className="fs-4 fw-bolder">High School</Card.Title>
-                <Card.Subtitle className="mb-3">2017-2020</Card.Subtitle>
-                <ul className="content-list fs-5 lh-lg">
-                  <li className="fw-bolder"> High school diploma</li>
+                <Card.Title className="fs-4 fw-bolder p-2">
+                  High School Diploma
+                </Card.Title>
+                <Card.Subtitle className="mb-3 opacity-75">
+                  2017-2020
+                </Card.Subtitle>
+                <ul className="text-start fs-5 lh-lg">
+                  <li className="fw-bolder"> Ressu High School</li>
                   <ul>
                     <li>
                       German Language Diploma II (Deutsches Sprachdiplom - DSD
                       II)
                     </li>
                   </ul>
-                  <li>Ressu high school</li>
-                  <li>Helsinki</li>
+                  <li>Helsinki, Finland</li>
                 </ul>
               </Card.Body>
             </Card>

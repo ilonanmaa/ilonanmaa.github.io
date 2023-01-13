@@ -18,14 +18,7 @@ body {
 @media only screen and (max-width: 480px) {
   html,
   body {
-    width: 100%;
-    overflow-x: hidden;
-    font-family: Arial !important;
-    scroll-behavior: smooth;
     font-size: var(--mobile-fs);
-    color: azure;
-    background-color: #151515;
-    position: relative;
   }
 }
 
@@ -33,19 +26,11 @@ body {
   background-color: #151515;
 }
 
-#welcome {
-  padding: 2rem;
-  border: 1px solid azure;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
 /****Navbar CSS****/
 
 .navbar-scrolled {
   background-color: #151515;
-  width: 100vw;
   display: block;
-
   transition: 0.3s ease-in;
   border-bottom: 3px solid;
   border-image: linear-gradient(
@@ -61,26 +46,8 @@ body {
 
 .navbar-notscrolled {
   background-color: transparent;
-  width: 100vw;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   transition: 0.3s ease-in;
-}
-
-.navbar {
-  display: flex;
-  flex-direction: row;
-  width: 100vw;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  align-items: center;
-}
-
-.navbar-collapse {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
 }
 
 .navbar-brand {
@@ -100,22 +67,20 @@ body {
   );
   background-color: azure;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 .navbar .nav-link {
   color: azure;
   font-weight: bold;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .navbar .nav-link:hover {
-  color: azure;
+  color: inherit;
   opacity: 0.75;
 }
 .navbar .nav-link.active {
-  color: azure;
+  color: inherit;
   opacity: 0.75;
 }
 
@@ -142,7 +107,7 @@ body {
   padding-bottom: 1rem;
 }
 
-.banner {
+#home {
   margin-top: 0;
   padding: 260px 0 100px 0;
   width: 100vw;
@@ -150,29 +115,23 @@ body {
   color: azure;
 }
 
-.container-education-bg {
-  width: 100vw;
-  text-align: center;
-}
-
-.container-education {
-  text-align: center;
-  padding: 4em;
-}
-
-@media only screen and (max-width: 480px) {
-  .container-education {
-    text-align: center;
-    padding: 2rem;
-  }
-}
-
 .modal {
   color: black;
 }
 
+/*Stop background from shifting when opening a modal*/
 .modal-open {
   padding-right: 0 !important;
+}
+
+/****Experience CSS****/
+
+#experience {
+  background-color: black;
+  background-image: url("./assets/img/banner-stars-bg.jpg");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /****Projects CSS****/
@@ -191,13 +150,8 @@ body {
       rgba(87, 44, 142, 1) 81%,
       rgba(53, 30, 106, 1) 100%
     );
-  padding: 2rem;
-  text-align: center;
 }
 
-.projects-container {
-  text-align: center;
-}
 .project-card {
   width: 40rem;
 }
@@ -207,61 +161,15 @@ body {
     width: auto;
   }
 }
-.project-card-footer {
-  border-top: 1px solid azure;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.project-links-section {
-  border-top: 1px solid azure;
-  text-align: justify;
-}
-
-.projects-column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.project-links {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
 
 /****Cards CSS****/
 
+.card-body {
+  background-color: #151515;
+}
+
 .card-body .card-text {
   text-align: justify;
-}
-
-.content-list {
-  text-align: left;
-}
-
-.card-body .card-subtitle {
-  color: azure;
-  opacity: 0.8;
-}
-
-.card-body .card-link {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.card-body .card-link a:link {
-  border-radius: 1rem;
-  margin: 0.5rem;
-  padding: 0.5rem;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1.6rem;
-}
-.card-body .card-link a:hover {
-  color: #6cb5dc;
 }
 
 /****Skills CSS****/
@@ -269,7 +177,7 @@ body {
 .skills-container-bg {
   background-color: black;
   background-image: url("./assets/img/banner-stars-bg.jpg");
-  background-position: top center;
+  background-position: bottom center;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 2rem;
@@ -284,21 +192,13 @@ body {
 
 @media only screen and (max-width: 480px) {
   .skills-container-bg {
-    background-color: black;
-    background-image: url("./assets/img/banner-stars-bg.jpg");
-    background-position: top center;
-    background-size: cover;
-    background-repeat: no-repeat;
     padding-top: 2rem;
     padding-bottom: 2rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
   .skills-container {
-    background-color: #151515;
-    text-align: center;
     padding: 2rem;
-    border-radius: 4rem;
   }
 }
 .skill-bar {
@@ -312,30 +212,31 @@ body {
   ) !important;
 }
 
-.card-body {
-  background-color: #151515;
-}
-.card-body .card-title {
-  color: azure;
-  font-weight: bolder;
-  font-size: 2rem;
-  padding: 1rem;
-}
-
 /****Skills tab CSS****/
-
-.tabs {
-  padding: 2rem;
-  overflow: hidden;
+.tab-bar-pill {
+  background-color: transparent;
+  width: 80%;
 }
+
 .tab-bar-pill .nav-link {
-  border-radius: 4rem;
-  border: 1px solid azure;
   font-weight: bold;
   color: azure;
 }
 
-.tab-bar-pill .nav-link:hover {
+.rounded {
+  border-radius: 4rem !important;
+}
+
+.rounded-start {
+  border-radius: 4rem 0 0 4rem !important;
+}
+
+.rounded-end {
+  border-radius: 0 4rem 4rem 0 !important;
+}
+
+.technical-key .nav-link:hover,
+.technical-key .nav-link.active {
   background: linear-gradient(
     to left,
     rgba(146, 99, 203, 1) 20%,
@@ -346,9 +247,10 @@ body {
   );
 }
 
-.tab-bar-pill .nav-link.active {
+.languages-key .nav-link:hover,
+.languages-key .nav-link.active {
   background: linear-gradient(
-    to left,
+    to right,
     rgba(146, 99, 203, 1) 20%,
     rgba(108, 181, 220, 1) 45%,
     rgba(80, 101, 171, 1) 59%,

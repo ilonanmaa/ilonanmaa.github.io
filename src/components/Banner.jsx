@@ -2,11 +2,13 @@ import { Col, Container, Row } from "react-bootstrap";
 
 const Banner = () => {
   return (
-    <section className="banner" id="home">
-      <Container className="banner-content">
+    <section id="home">
+      <Container className="">
         <Row>
           <Col>
-            <h1 id="welcome">Welcome to my CV</h1>
+            <h1 id="welcome" className="fw-bolder">
+              Welcome to my CV!
+            </h1>
           </Col>
           <Col></Col>
         </Row>

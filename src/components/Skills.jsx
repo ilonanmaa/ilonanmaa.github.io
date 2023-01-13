@@ -4,29 +4,44 @@ import SkillBadge from "./SkillBadge";
 import "react-multi-carousel/lib/styles.css";
 import "react-circular-progressbar/dist/styles.css";
 import { useState } from "react";
+import "../App.css";
 
 const Skills = () => {
   const [activeTab, setActiveTab] = useState("technical");
   return (
     <div className="skills-container-bg" id="skills">
       <Container className="skills-container">
-        <h2 className="fw-bolder mb-5">Skills</h2>
-        <Tabs
-          defaultActiveKey="technical"
-          className="tab-bar-pill px-5"
-          fill={true}
-          justify={true}
-          variant="pills"
-        >
-          <Tab eventKey="technical" title="Technical">
-            <Technical />
-          </Tab>
-          <Tab
-            eventKey="languages"
-            title="Languages"
-            className="language-tab"
-          ></Tab>
-        </Tabs>
+        <h2 className="fw-bolder mb-5 text-uppercase">Skills</h2>
+        <Tab.Container>
+          <Nav
+            className="tab-bar-pill d-flex justify-content-center rounded mx-auto"
+            fill
+            justify
+          >
+            <Nav.Item className="technical-key">
+              <Nav.Link
+                eventKey="technical"
+                className="rounded-start border border-white"
+              >
+                Technical
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item className="languages-key">
+              <Nav.Link
+                eventKey="languages"
+                className="rounded-end border border-white"
+              >
+                Languages
+              </Nav.Link>
+            </Nav.Item>
+          </Nav>
+          <Tab.Content>
+            <Tab.Pane eventKey="technical">
+              <Technical />
+            </Tab.Pane>
+            <Tab.Pane eventKey="languages"></Tab.Pane>
+          </Tab.Content>
+        </Tab.Container>
       </Container>
     </div>
   );

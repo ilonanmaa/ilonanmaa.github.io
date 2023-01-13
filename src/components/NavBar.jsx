@@ -2,9 +2,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { useState, useEffect } from "react";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import githubIcon from "../assets/img/github.png";
-import linkedinIcon from "../assets/img/linkedin.png";
 
 const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -28,14 +26,21 @@ const NavBar = () => {
   return (
     <Navbar
       expand="lg"
-      className={scrolled ? "navbar-scrolled" : "navbar-notscrolled"}
+      className={
+        scrolled
+          ? "navbar-scrolled px-4 d-flex flex-row align-items-center"
+          : "navbar-notscrolled px-4 d-flex flex-row align-items-center"
+      }
       fixed="top"
     >
       <Navbar.Brand className="fs-1" href="/">
         ILONA
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
+      <Navbar.Collapse
+        id="basic-navbar-nav"
+        className="d-flex flex-row justify-content-end"
+      >
         <Nav>
           <Nav.Link className="nav-link fs-4" href="#home">
             Home
