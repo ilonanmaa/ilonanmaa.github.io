@@ -13,9 +13,9 @@ import SkillBadge from "./SkillBadge";
 
 const Projects = () => {
   return (
-    <div className="projects-container-bg text-center p-4" id="projects">
+    <div className="p-4" id="projects">
       <Container>
-        <Row>
+        <Row className="text-center">
           <h2 className="fw-bolder mb-4 text-uppercase">Projects</h2>
         </Row>
         <Row>
@@ -24,10 +24,13 @@ const Projects = () => {
               <Card border={light} className="project-card">
                 <Card.Img variant="top" src={projectBG} />
                 <Card.Body>
-                  <Card.Title className="fs-4 fw-bolder p-2">
+                  <Card.Title className="fs-4 fw-bolder p-2 text-center">
                     Personal website{" "}
                   </Card.Title>
-                  <Card.Text className="lh-lg fs-5 text-justify">
+                  <Card.Text
+                    className="lh-lg fs-5"
+                    style={{ textAlign: "justify" }}
+                  >
                     Personal CV website and my project for learning front-end
                     development with React. This project uses React-Bootstrap
                     library. Currently working on making the website mobile
@@ -44,7 +47,7 @@ const Projects = () => {
                       Repository
                     </Card.Link>
                     <Card.Link
-                      href="https://github.com/ilonanmaa/ilonanmaa.github.io"
+                      href="https://ilonanmaa.github.io"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="fs-5 mb-3"

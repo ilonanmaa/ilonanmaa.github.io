@@ -136,7 +136,7 @@ body {
 
 /****Projects CSS****/
 
-.projects-container-bg {
+#projects {
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 1) 5%,
@@ -166,10 +166,6 @@ body {
 
 .card-body {
   background-color: #151515;
-}
-
-.card-body .card-text {
-  text-align: justify;
 }
 
 /****Skills CSS****/
