@@ -9,7 +9,7 @@ const Education = () => {
   const handleShow = () => setShow(true);
 
   return (
-    <div id="education">
+    <div id="education" className="p-4">
       <Container className=" text-center p-4">
         <Row>
           <h2 className="fw-bolder mb-4 text-uppercase">Education</h2>

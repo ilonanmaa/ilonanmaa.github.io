@@ -5,11 +5,11 @@ import "react-multi-carousel/lib/styles.css";
 import "react-circular-progressbar/dist/styles.css";
 import { useState } from "react";
 import "../App.css";
+import StarRating from "./StarRating";
 
 const Skills = () => {
-  const [activeTab, setActiveTab] = useState("technical");
   return (
-    <div className="skills-container-bg" id="skills">
+    <div className="skills-container-bg p-4" id="skills">
       <Container className="skills-container bg-dark">
         <h2 className="fw-bolder mb-5 text-uppercase">Skills</h2>
         <Tab.Container>
@@ -39,7 +39,10 @@ const Skills = () => {
             <Tab.Pane eventKey="technical">
               <Technical />
             </Tab.Pane>
-            <Tab.Pane eventKey="languages"></Tab.Pane>
+            <Tab.Pane eventKey="languages">
+              {" "}
+              <Languages />
+            </Tab.Pane>
           </Tab.Content>
         </Tab.Container>
       </Container>
@@ -49,7 +52,7 @@ const Skills = () => {
 
 const Technical = () => {
   return (
-    <div className="py-4 px-2">
+    <div className="py-4 px-2 ">
       <div className="mb-4">
         <SkillBadge text="Scala" />
         <Progress barClassName="skill-bar" value={90} />
@@ -73,6 +76,41 @@ const Technical = () => {
         <SkillBadge text="C/C++" />
 
         <Progress barClassName="skill-bar" value={45} />
+      </div>
+    </div>
+  );
+};
+
+const Languages = () => {
+  return (
+    <div className="py-4 px-2 fs-5 fw-bold">
+      <div className="mb-4">
+        <p>
+          Finnish ─ native <StarRating count={5} />{" "}
+        </p>
+      </div>
+      <div className="mb-4">
+        <p>
+          English ─ fluent
+          <StarRating count={5} />
+        </p>
+      </div>
+      <div className="mb-4">
+        <p>
+          Chinese ─ native (spoken)
+          <StarRating count={4} />
+        </p>
+      </div>
+      <div className="mb-4">
+        <p>
+          German ─ intermediate
+          <StarRating count={3} />
+        </p>
+      </div>
+      <div>
+        <p>
+          Swedish ─ beginner <StarRating count={1} />
+        </p>
       </div>
     </div>
   );

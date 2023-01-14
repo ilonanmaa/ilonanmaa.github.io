@@ -14,7 +14,7 @@ const Experience = () => {
             <Card>
               <Card.Body className="bg-dark">
                 <Card.Title className="fs-4 fw-bolder p-2">
-                  Software developer
+                  Software Developer
                 </Card.Title>
                 <Card.Subtitle className="mb-3 opacity-75">
                   09/2022-12/2022

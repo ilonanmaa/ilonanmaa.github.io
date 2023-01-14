@@ -132,14 +132,14 @@ const NavBar = () => {
         <Offcanvas.Body className="bg-dark justify-content-end align-items-center">
           <Nav>
             <Nav.Link
-              className="nav-link fs-4 fw-bold"
+              className="fs-4 fw-bold"
               href="#home"
               onClick={() => handleClose()}
             >
               Home
             </Nav.Link>
             <Nav.Link
-              className="nav-link fs-4 fw-bold"
+              className="fs-4 fw-bold"
               href="#education"
               onClick={() => handleClose()}
             >

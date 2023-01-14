@@ -324,3 +324,10 @@ body {
     )
     1;
 }
+
+/****Star rating CSS****/
+
+.star-rating {
+  color: azure;
+  background-clip: text;
+}
