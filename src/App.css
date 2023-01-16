@@ -70,41 +70,29 @@ body {
   color: transparent;
 }
 
-.navbar .nav-link {
+a,
+.nav-link {
+  color: azure;
+}
+a:hover,
+.nav-link:hover,
+.btn-link:hover {
   color: azure;
   font-weight: bold;
-}
-
-.navbar .nav-link:hover,
-.navbar .btn-link:hover {
-  color: inherit;
   opacity: 0.8;
   background-color: transparent;
 }
-.navbar .nav-link.active,
-.navbar .btn-link.active {
-  color: inherit;
-  opacity: 0.8;
+
+a:active,
+.nav-link:active,
+.btn-link:active,
+.nav-link:visited,
+.btn-link:visited {
+  color: azure;
+  font-weight: bold;
+  background-color: transparent;
 }
 
-.tiny-social-logo {
-  height: 60px;
-  aspect-ratio: 5/5;
-  background-color: azure;
-  border-radius: 2rem;
-  padding: 1px;
-  margin: 10px;
-}
-
-.offcanvas-header {
-  background-image: linear-gradient(
-    to left,
-    rgba(146, 99, 203, 1) 20%,
-    rgba(108, 181, 220, 1) 45%,
-    rgba(80, 101, 171, 1) 59%,
-    rgba(87, 44, 142, 1) 81%
-  );
-}
 /****Banner and Education component CSS****/
 
 .banner-education-section {
@@ -237,13 +225,7 @@ body {
 /****Skills tab CSS****/
 .tab-bar-pill {
   background-color: transparent;
-  width: 80%;
-}
-
-.tab-bar-pill .nav-link {
-  font-weight: bold;
-  color: azure;
-  background-color: transparent;
+  width: 90%;
 }
 
 .rounded {
@@ -261,18 +243,6 @@ body {
 .technical-key .nav-link:hover,
 .technical-key .nav-link.active {
   background: linear-gradient(
-    to left,
-    rgba(146, 99, 203, 1) 20%,
-    rgba(108, 181, 220, 1) 45%,
-    rgba(80, 101, 171, 1) 59%,
-    rgba(87, 44, 142, 1) 81%,
-    rgba(53, 30, 106, 1) 100%
-  );
-}
-
-.languages-key .nav-link:hover,
-.languages-key .nav-link.active {
-  background: linear-gradient(
     to right,
     rgba(146, 99, 203, 1) 20%,
     rgba(108, 181, 220, 1) 45%,
@@ -280,6 +250,20 @@ body {
     rgba(87, 44, 142, 1) 81%,
     rgba(53, 30, 106, 1) 100%
   );
+  color: azure;
+}
+
+.languages-key .nav-link:hover,
+.languages-key .nav-link.active {
+  background: linear-gradient(
+    to left,
+    rgba(146, 99, 203, 1) 20%,
+    rgba(108, 181, 220, 1) 45%,
+    rgba(80, 101, 171, 1) 59%,
+    rgba(87, 44, 142, 1) 81%,
+    rgba(53, 30, 106, 1) 100%
+  );
+  color: azure;
 }
 
 .languages-key .nav-link:hover,
@@ -330,4 +314,29 @@ body {
 .star-rating {
   color: azure;
   background-clip: text;
+}
+
+#sidemenu {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  padding: 100px;
+  color: azure;
+  width: 75%;
+  translate: 100%;
+  z-index: 1;
+}
+
+.navbar-item {
+  translate: 100%;
+  transition: translate 0.5s;
+  color: azure;
+}
+
+.navbar-visible {
+  translate: 0px !important;
+}
+
+.contact-list {
 }
