@@ -1,9 +1,8 @@
-import { Col, Container, Row, Tabs, Tab, Badge, Nav } from "react-bootstrap";
+import { Container, Tab, Nav } from "react-bootstrap";
 import { Progress } from "reactstrap";
 import SkillBadge from "./SkillBadge";
 import "react-multi-carousel/lib/styles.css";
 import "react-circular-progressbar/dist/styles.css";
-import { useState } from "react";
 import "../App.css";
 import StarRating from "./StarRating";
 
@@ -21,7 +20,7 @@ const Skills = () => {
             <Nav.Item className="technical-key">
               <Nav.Link
                 eventKey="technical"
-                className="rounded-start border border-white"
+                className="rounded-start border border-white fs-5"
               >
                 Technical
               </Nav.Link>
@@ -29,7 +28,7 @@ const Skills = () => {
             <Nav.Item className="languages-key">
               <Nav.Link
                 eventKey="languages"
-                className="rounded-end border border-white"
+                className="rounded-end border border-white fs-5"
               >
                 Languages
               </Nav.Link>
@@ -83,34 +82,24 @@ const Technical = () => {
 
 const Languages = () => {
   return (
-    <div className="py-4 px-2 fs-5 fw-bold">
+    <div className="pt-4 px-2 fs-5 fw-bold">
       <div className="mb-4">
-        <p>
-          Finnish ─ native <StarRating count={5} />{" "}
-        </p>
+        Finnish ─ native <StarRating count={5} />{" "}
       </div>
       <div className="mb-4">
-        <p>
-          English ─ fluent
-          <StarRating count={5} />
-        </p>
+        English ─ fluent
+        <StarRating count={5} />
       </div>
       <div className="mb-4">
-        <p>
-          Chinese ─ native (spoken)
-          <StarRating count={4} />
-        </p>
+        Chinese ─ native (spoken)
+        <StarRating count={4} />
       </div>
       <div className="mb-4">
-        <p>
-          German ─ intermediate
-          <StarRating count={3} />
-        </p>
+        German ─ intermediate
+        <StarRating count={3} />
       </div>
       <div>
-        <p>
-          Swedish ─ beginner <StarRating count={1} />
-        </p>
+        Swedish ─ beginner <StarRating count={1} />
       </div>
     </div>
   );

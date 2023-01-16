@@ -1,5 +1,4 @@
-import { AiFillStar } from "react-icons/ai";
-import { AiOutlineStar } from "react-icons/ai";
+import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 
 const StarRating = ({ count }) => {
   const stars = new Array([
@@ -12,16 +11,16 @@ const StarRating = ({ count }) => {
 
   for (let i = 0; i < 5; i++) {
     if (i < count) {
-      stars[i] = <AiFillStar />;
+      stars[i] = <AiFillStar className="mx-1" />;
     } else {
-      stars[i] = <AiOutlineStar />;
+      stars[i] = <AiOutlineStar className="mx-1" />;
     }
   }
 
   return (
-    <div className="star-rating">
+    <p className="star-rating">
       {stars[0]} {stars[1]} {stars[2]} {stars[3]} {stars[4]}
-    </div>
+    </p>
   );
 };
 
