@@ -1,5 +1,5 @@
 import { Container, Modal, Row, CardGroup, Button } from "react-bootstrap";
-import { Carousel, Card } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import { useState } from "react";
 
 const Education = () => {

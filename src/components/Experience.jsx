@@ -54,7 +54,7 @@ const Experience = () => {
                   Stablehand
                 </Card.Title>
                 <Card.Subtitle className="mb-3 opacity-75">
-                  09/2017-03/2021
+                  09/2018-03/2022
                 </Card.Subtitle>
                 <ul className="text-start fs-5 lh-lg">
                   <li className="fw-bolder">Stablehand in a riding school</li>

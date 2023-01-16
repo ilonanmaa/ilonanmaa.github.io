@@ -6,7 +6,7 @@ const Banner = () => {
       <Container className="">
         <Row>
           <Col>
-            <h1 id="welcome" className="fw-bolder">
+            <h1 id="welcome" className="fw-bolder p-4">
               Welcome to my CV!
             </h1>
           </Col>
