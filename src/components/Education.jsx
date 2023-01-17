@@ -1,6 +1,7 @@
 import { Container, Modal, Row, CardGroup, Button } from "react-bootstrap";
 import { Card } from "react-bootstrap";
 import { useState } from "react";
+import { IoLocationSharp } from "react-icons/io5";
 
 const Education = () => {
   const [show, setShow] = useState(false);
@@ -30,7 +31,11 @@ const Education = () => {
                     <li>Major in computer science</li>
                     <li>Minor in quantum technology</li>
                   </ul>
-                  <li>Espoo, Finland</li>
+                  <li>
+                    {" "}
+                    <IoLocationSharp className="mx-2" />
+                    Espoo, Finland
+                  </li>
                 </ul>
                 <Card.Footer className="bg-dark border-0">
                   {" "}
@@ -56,7 +61,9 @@ const Education = () => {
                       II)
                     </li>
                   </ul>
-                  <li>Helsinki, Finland</li>
+                  <li>
+                    <IoLocationSharp className="mx-2" /> Helsinki, Finland
+                  </li>
                 </ul>
               </Card.Body>
             </Card>

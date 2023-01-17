@@ -73,6 +73,7 @@ body {
 a,
 .nav-link {
   color: azure;
+  font-weight: bold;
 }
 a:hover,
 .nav-link:hover,

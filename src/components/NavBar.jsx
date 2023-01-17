@@ -99,24 +99,25 @@ const NavBar = () => {
             >
               Projects
             </Nav.Link>
-          </div>
-          <div className="d-flex flex-row">
-            <Nav.Link
-              href="https://github.com/ilonanmaa"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="nav-link fs-1 fw-bold"
-            >
-              <AiFillGithub />
-            </Nav.Link>
-            <Nav.Link
-              href="https://www.linkedin.com/in/ilonama/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="nav-link fs-1 fw-bold"
-            >
-              <AiFillLinkedin />
-            </Nav.Link>
+
+            <div className="d-flex flex-row">
+              <Nav.Link
+                href="https://github.com/ilonanmaa"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="nav-link fs-1 fw-bold"
+              >
+                <AiFillGithub />
+              </Nav.Link>
+              <Nav.Link
+                href="https://www.linkedin.com/in/ilonama/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="nav-link fs-1 fw-bold"
+              >
+                <AiFillLinkedin />
+              </Nav.Link>
+            </div>
           </div>
         </Nav>
       </div>
