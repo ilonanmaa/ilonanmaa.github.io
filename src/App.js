@@ -9,6 +9,7 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
+import i18n from "./i18n/config";
 
 const App = () => {
   return (
