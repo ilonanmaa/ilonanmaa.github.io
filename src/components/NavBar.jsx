@@ -1,7 +1,10 @@
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import i18n from "../i18n/config";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { Button } from "react-bootstrap";
 
 const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -55,6 +58,11 @@ const NavBar = () => {
     }
   });
 
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
+  const { t } = useTranslation("translation", { keyPrefix: "menu" });
   return (
     <div>
       <div
@@ -69,35 +77,35 @@ const NavBar = () => {
               href="#home"
               onClick={() => setSideHidden(!sideMenuHidden)}
             >
-              Home
+              {t("home")}
             </Nav.Link>
             <Nav.Link
               className="nav-link fs-4 fw-bold"
               href="#education"
               onClick={() => setSideHidden(!sideMenuHidden)}
             >
-              Education
+              {t("education")}
             </Nav.Link>
             <Nav.Link
               className="nav-link fs-4 fw-bold"
               href="#experience"
               onClick={() => setSideHidden(!sideMenuHidden)}
             >
-              Experience
+              {t("experience")}
             </Nav.Link>
             <Nav.Link
               className="nav-link fs-4 fw-bold"
               href="#skills"
               onClick={() => setSideHidden(!sideMenuHidden)}
             >
-              Skills
+              {t("skills")}
             </Nav.Link>
             <Nav.Link
               className="nav-link fs-4 fw-bold"
               href="#projects"
               onClick={() => setSideHidden(!sideMenuHidden)}
             >
-              Projects
+              {t("projects")}
             </Nav.Link>
 
             <div className="d-flex flex-row">
@@ -117,6 +125,10 @@ const NavBar = () => {
               >
                 <AiFillLinkedin />
               </Nav.Link>
+            </div>
+            <div className="d-flex flex-row">
+              <Button onClick={() => changeLanguage("fi")}>Suomi</Button>
+              <Button onClick={() => changeLanguage("en")}>English</Button>
             </div>
           </div>
         </Nav>
