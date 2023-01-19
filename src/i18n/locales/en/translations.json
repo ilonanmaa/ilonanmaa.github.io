@@ -26,6 +26,10 @@
       "title": "High School Diploma",
       "time": "08/2017-06/2020",
       "school": "Ressu high school",
+      "exams": {
+        "exam": "Matriculation examination",
+        "subjects": "Mathematics, Chemistry, Physics, Finnish, English & German"
+      },
       "german-diploma": "German Language Diploma II (Deutsches Sprachdiplom - DSD II)",
       "location": "Helsinki, Finland"
     }

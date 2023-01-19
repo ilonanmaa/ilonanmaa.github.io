@@ -3,6 +3,7 @@ import { Card } from "react-bootstrap";
 import { useState } from "react";
 import { IoLocationSharp } from "react-icons/io5";
 import { useTranslation } from "react-i18next";
+import { FaInfoCircle } from "react-icons/fa";
 
 const Education = () => {
   const { t } = useTranslation("translation", {
@@ -24,53 +25,49 @@ const Education = () => {
           <CardGroup>
             <Card>
               <Card.Body className="bg-dark">
-                <Card.Title className="fs-4 fw-bolder p-2">
-                  {t("university.bachelor-title")}
-                </Card.Title>
-                <Card.Subtitle className="mb-3 opacity-75">
-                  {t("university.time")}
-                </Card.Subtitle>
-                <ul className="text-start fs-5 lh-lg">
-                  <li className="fw-bolder">{t("university.university")}</li>
-                  <ul>
-                    <li>{t("university.major")}</li>
-                    <li>{t("university.minor")}</li>
-                  </ul>
-                  <li>
-                    {" "}
-                    <IoLocationSharp className="mx-2" />
-                    {t("university.location")}
-                  </li>
+                <div className="border-bottom pb-3">
+                  <Card.Title className="fs-4 fw-bolder">
+                    {t("university.bachelor-title")}
+                  </Card.Title>
+                  <Card.Title className="fs-5 fw-bolder">
+                    {t("university.university")}
+                  </Card.Title>
+                  <Card.Subtitle className="opacity-75 mt-2">
+                    {t("university.time")}
+                  </Card.Subtitle>
+                </div>
+                <ul className="text-start fs-5 lh-lg my-2">
+                  <li>{t("university.major")}</li>
+                  <li>{t("university.minor")}</li>
+                  <li>{t("university.location")}</li>
                 </ul>
                 <Card.Footer className="bg-dark border-0">
                   {" "}
-                  <Nav.Link
-                    onClick={handleShow}
-                    variant="link"
-                    className="fs-5"
-                  >
+                  <Button onClick={handleShow} variant="link" className="fs-5">
                     {t("university.relevant-courses")}
-                  </Nav.Link>
+                  </Button>
                 </Card.Footer>
               </Card.Body>
             </Card>
             <Card>
               <Card.Body className="bg-dark">
-                <Card.Title className="fs-4 fw-bolder p-2">
-                  {t("high-school.title")}
-                </Card.Title>
-                <Card.Subtitle className="mb-3 opacity-75">
-                  {t("high-school.time")}
-                </Card.Subtitle>
-                <ul className="text-start fs-5 lh-lg">
-                  <li className="fw-bolder"> {t("high-school.school")}</li>
+                <div className="border-bottom pb-3">
+                  <Card.Title className="fs-4 fw-bolder">
+                    {t("high-school.title")}
+                  </Card.Title>
+                  <Card.Title className="fs-5 fw-bolder">
+                    {t("high-school.school")}
+                  </Card.Title>
+                  <Card.Subtitle className="opacity-75 mt-2">
+                    {t("high-school.time")}
+                  </Card.Subtitle>
+                </div>
+                <ul className="text-start fs-5 lh-lg my-2">
+                  <li>{t("high-school.exams.exam")}</li>
                   <ul>
-                    <li>{t("high-school.german-diploma")}</li>
+                    <li>{t("high-school.exams.subjects")}</li>
                   </ul>
-                  <li>
-                    <IoLocationSharp className="mx-2" />{" "}
-                    {t("high-school.location")}
-                  </li>
+                  <li>{t("high-school.location")}</li>
                 </ul>
               </Card.Body>
             </Card>

@@ -14,12 +14,14 @@ const Experience = () => {
           <CardGroup>
             <Card>
               <Card.Body className="bg-dark">
-                <Card.Title className="fs-4 fw-bolder p-2">
-                  {t("software-developer.title")}
-                </Card.Title>
-                <Card.Subtitle className="mb-3 opacity-75">
-                  {t("software-developer.time")}
-                </Card.Subtitle>
+                <div>
+                  <Card.Title className="fs-4 fw-bolder p-2">
+                    {t("software-developer.title")}
+                  </Card.Title>
+                  <Card.Subtitle className="mb-3 opacity-75">
+                    {t("software-developer.time")}
+                  </Card.Subtitle>
+                </div>
                 <ul className="text-start fs-5 lh-lg">
                   <li className="fw-bolder">
                     {t("software-developer.description")}

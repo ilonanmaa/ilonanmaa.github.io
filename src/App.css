@@ -71,26 +71,19 @@ body {
   font-weight: 900;
 }
 
-a,
-.nav-link {
+#sidemenu .nav-link,
+#navbar-expanded .nav-link,
+#skills-tabs .nav-item .nav-link {
   color: azure;
   font-weight: bold;
 }
-a:hover,
-.nav-link:hover,
-.btn-link:hover {
+
+#sidemenu .nav-link:hover,
+#navbar-expanded .nav-link:hover,
+#skills-tabs .nav-item .nav-link:hover {
   color: azure;
   font-weight: bold;
   opacity: 0.8;
-  background-color: transparent;
-}
-
-.nav-link:active,
-.btn-link:active,
-.nav-link:visited,
-.btn-link:visited {
-  color: azure;
-  font-weight: bold;
   background-color: transparent;
 }
 

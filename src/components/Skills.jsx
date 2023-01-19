@@ -20,6 +20,7 @@ const Skills = () => {
             className="tab-bar-pill d-flex justify-content-center rounded mx-auto"
             fill
             justify
+            id="skills-tabs"
           >
             <Nav.Item className="technical-key">
               <Nav.Link
