@@ -16,6 +16,13 @@ const App = () => {
     <div className="app">
       <NavBar />
       <section className="banner-education-section">
+        <section id="shooting-stars">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </section>
         <Banner />
         <Education />
       </section>
