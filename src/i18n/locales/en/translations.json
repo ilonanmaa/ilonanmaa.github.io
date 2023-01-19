@@ -18,8 +18,9 @@
       "minor": "Minor in quantum technology",
       "location": "Espoo, Finland",
       "relevant-courses": "Relevant courses",
+      "thesis": "Bachelor's thesis on",
       "courses": {
-        "1": "Programming 1 and 2"
+        "1": "Programming 1"
       }
     },
     "high-school": {
@@ -46,7 +47,7 @@
     },
     "TA": {
       "title": "Teaching assistant TA",
-      "description": "Teaching assistant for course Programmin 1",
+      "description": "Teaching assistant for course Programming 1",
       "time": "09/2022-12/2022",
       "type": "Part-time",
       "company": "Aalto university"
@@ -68,7 +69,8 @@
       "title": "Languages",
       "finnish": "Finnish ─ native",
       "english": "English ─ fluent",
-      "chinese": "Spoken chinese ─ native",
+      "chinese-spoken": "Spoken chinese ─ native",
+      "chinese-written": "Written chinese ─ intermediate",
       "german": "German ─ intermediate",
       "swedish": "Swedish ─ basics"
     }
