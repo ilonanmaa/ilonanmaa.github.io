@@ -90,23 +90,27 @@ const Languages = () => {
     keyPrefix: "skills.languages",
   });
   return (
-    <div className="pt-4 px-2 fs-5 fw-bold">
-      <div className="mb-4">
-        {t("finnish")} <StarRating count={5} />{" "}
+    <div className="pt-4 px-2 fs-6 fw-bold">
+      <div className="mb-4 language">
+        {t("finnish")} <StarRating count={5} />
       </div>
-      <div className="mb-4">
+      <div className="mb-4 language">
         {t("english")}
         <StarRating count={5} />
       </div>
-      <div className="mb-4">
-        {t("chinese")}
-        <StarRating count={4} />
+      <div className="mb-4 language">
+        {t("chinese-spoken")}
+        <StarRating count={5} />
       </div>
-      <div className="mb-4">
+      <div className="mb-4 language">
         {t("german")}
         <StarRating count={3} />
       </div>
-      <div>
+      <div className="mb-4 language">
+        {t("chinese-written")}
+        <StarRating count={2} />
+      </div>
+      <div className="language">
         {t("swedish")} <StarRating count={1} />
       </div>
     </div>

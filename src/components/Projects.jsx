@@ -22,7 +22,7 @@ const Projects = () => {
                     {t("portfolio.title")}{" "}
                   </Card.Title>
                   <Card.Text
-                    className="lh-lg fs-5"
+                    className="lh-lg fs-6"
                     style={{ textAlign: "justify" }}
                   >
                     {t("portfolio.description")}
@@ -32,7 +32,7 @@ const Projects = () => {
                       href="https://github.com/ilonanmaa/ilonanmaa.github.io"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="fs-5 mb-3"
+                      className="fs-6 mb-3"
                     >
                       {" "}
                       {t("portfolio.repository")}
@@ -41,7 +41,7 @@ const Projects = () => {
                       href="https://ilonanmaa.github.io"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="fs-5 mb-3"
+                      className="fs-6 mb-3"
                     >
                       {" "}
                       {t("portfolio.demo")}

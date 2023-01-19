@@ -32,18 +32,27 @@ const Education = () => {
                   <Card.Title className="fs-5 fw-bolder">
                     {t("university.university")}
                   </Card.Title>
-                  <Card.Subtitle className="opacity-75 mt-2">
+                  <Card.Subtitle className="opacity-75 mt-2 fst-italic">
                     {t("university.time")}
                   </Card.Subtitle>
                 </div>
-                <ul className="text-start fs-5 lh-lg my-2">
+                <ul className="text-start fs-6 lh-lg my-2">
                   <li>{t("university.major")}</li>
+                  <ul>
+                    <li>
+                      {t("university.thesis")} <br />
+                      <span className="fst-italic">
+                        Deep learning for audio driven facial animation in video
+                        games
+                      </span>
+                    </li>
+                  </ul>
                   <li>{t("university.minor")}</li>
                   <li>{t("university.location")}</li>
                 </ul>
                 <Card.Footer className="bg-dark border-0">
                   {" "}
-                  <Button onClick={handleShow} variant="link" className="fs-5">
+                  <Button onClick={handleShow} variant="link" className="fs-6">
                     {t("university.relevant-courses")}
                   </Button>
                 </Card.Footer>
@@ -58,14 +67,15 @@ const Education = () => {
                   <Card.Title className="fs-5 fw-bolder">
                     {t("high-school.school")}
                   </Card.Title>
-                  <Card.Subtitle className="opacity-75 mt-2">
+                  <Card.Subtitle className="opacity-75 mt-2 fst-italic">
                     {t("high-school.time")}
                   </Card.Subtitle>
                 </div>
-                <ul className="text-start fs-5 lh-lg my-2">
+                <ul className="text-start fs-6 lh-lg my-2">
                   <li>{t("high-school.exams.exam")}</li>
                   <ul>
-                    <li>{t("high-school.exams.subjects")}</li>
+                    <li>Science: {t("high-school.exams.subjects")}</li>
+                    <li>Languages: {t("high-school.exams.subjects")}</li>
                   </ul>
                   <li>{t("high-school.location")}</li>
                 </ul>

@@ -14,15 +14,18 @@ const Experience = () => {
           <CardGroup>
             <Card>
               <Card.Body className="bg-dark">
-                <div>
-                  <Card.Title className="fs-4 fw-bolder p-2">
+                <div className="border-bottom pb-3">
+                  <Card.Title className="fs-4 fw-bolder">
                     {t("software-developer.title")}
                   </Card.Title>
-                  <Card.Subtitle className="mb-3 opacity-75">
+                  <Card.Title className="fs-5 fw-bold">
+                    {t("software-developer.company")}
+                  </Card.Title>
+                  <Card.Subtitle className="opacity-75 mt-2 fst-italic">
                     {t("software-developer.time")}
                   </Card.Subtitle>
                 </div>
-                <ul className="text-start fs-5 lh-lg">
+                <ul className="text-start fs-6 lh-lg">
                   <li className="fw-bolder">
                     {t("software-developer.description")}
                   </li>
@@ -36,13 +39,18 @@ const Experience = () => {
             </Card>
             <Card>
               <Card.Body className="bg-dark">
-                <Card.Title className="fs-4 fw-bolder p-2">
-                  {t("TA.title")}
-                </Card.Title>
-                <Card.Subtitle className="mb-3 opacity-75">
-                  {t("TA.time")}
-                </Card.Subtitle>
-                <ul className="text-start fs-5 lh-lg">
+                <div className="border-bottom pb-3">
+                  <Card.Title className="fs-4 fw-bolder">
+                    {t("TA.title")}
+                  </Card.Title>
+                  <Card.Title className="fs-5 fw-bold">
+                    {t("TA.company")}
+                  </Card.Title>
+                  <Card.Subtitle className="opacity-75 mt-2 fst-italic">
+                    {t("TA.time")}
+                  </Card.Subtitle>
+                </div>
+                <ul className="text-start fs-6 lh-lg">
                   <li className="fw-bolder">{t("TA.description")}</li>
                   <ul>
                     <li>{t("TA.type")}</li>
@@ -53,13 +61,18 @@ const Experience = () => {
             </Card>
             <Card>
               <Card.Body className="bg-dark">
-                <Card.Title className="fs-4 fw-bolder p-2">
-                  {t("stablehand.title")}
-                </Card.Title>
-                <Card.Subtitle className="mb-3 opacity-75">
-                  {t("stablehand.time")}
-                </Card.Subtitle>
-                <ul className="text-start fs-5 lh-lg">
+                <div className="border-bottom pb-3">
+                  <Card.Title className="fs-4 fw-bolder">
+                    {t("stablehand.title")}
+                  </Card.Title>
+                  <Card.Title className="fs-5 fw-bold">
+                    {t("stablehand.company")}
+                  </Card.Title>
+                  <Card.Subtitle className="opacity-75 mt-2 fst-italic">
+                    {t("stablehand.time")}
+                  </Card.Subtitle>
+                </div>
+                <ul className="text-start fs-6 lh-lg">
                   <li className="fw-bolder">{t("stablehand.description")}</li>
                   <ul>
                     <li>{t("stablehand.type")}</li>
