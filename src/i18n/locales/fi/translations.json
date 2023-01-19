@@ -82,7 +82,7 @@
       "title": "Persoonallinen porfolio",
       "description": "Persoonallinen portfolio ja projekti front-end kehityksen ja React:n opetteluun. Projekti käyttää React-bootstrap kirjasto, ja sivut hostataan GitHub Sivuilla.",
       "repository": "Repository",
-      "demo": "Video"
+      "demo": "Demo"
     }
   },
   "footer": {

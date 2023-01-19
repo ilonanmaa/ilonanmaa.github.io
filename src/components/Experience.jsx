@@ -33,7 +33,6 @@ const Experience = () => {
                     <li>{t("software-developer.type")}</li>
                     <li>{t("software-developer.info")}</li>
                   </ul>
-                  <li>{t("software-developer.company")}</li>
                 </ul>
               </Card.Body>
             </Card>

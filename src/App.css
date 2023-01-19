@@ -134,12 +134,12 @@ body {
 }
 
 .project-card {
-  width: 40rem;
+  width: 40rem !important;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 740px) {
   .project-card {
-    width: auto;
+    width: auto !important;
   }
 }
 
@@ -262,15 +262,8 @@ body {
 /****Badge CSS ****/
 
 .badge {
-  margin: 1rem;
-  font-size: small;
-}
-
-@media only screen and (max-width: 480px) {
-  .badge {
-    font-size: x-small;
-    margin: 0.5rem;
-  }
+  margin: 0.5rem;
+  font-size: x-small;
 }
 
 /****Star rating CSS****/

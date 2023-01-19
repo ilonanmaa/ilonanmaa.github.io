@@ -25,7 +25,7 @@ const Skills = () => {
             <Nav.Item className="technical-key">
               <Nav.Link
                 eventKey="technical"
-                className="rounded-start border border-white fs-5"
+                className="rounded-start border border-white fs-6 text-uppercase"
               >
                 {t("technical.title")}
               </Nav.Link>
@@ -33,7 +33,7 @@ const Skills = () => {
             <Nav.Item className="languages-key">
               <Nav.Link
                 eventKey="languages"
-                className="rounded-end border border-white fs-5"
+                className="rounded-end border border-white fs-6 text-uppercase"
               >
                 {t("languages.title")}
               </Nav.Link>
@@ -59,11 +59,14 @@ const Technical = () => {
     <div className="py-4 px-2 ">
       <div className="mb-4">
         <SkillBadge text="Scala" />
+
         <Progress barClassName="skill-bar" value={90} />
       </div>
       <div className="mb-4">
         <SkillBadge text="HTML/CSS" />
         <SkillBadge text="Javascript" />
+        <SkillBadge text="React" />
+        <SkillBadge text="React Native" />
 
         <Progress barClassName="skill-bar" value={75} />
       </div>

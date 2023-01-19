@@ -54,7 +54,7 @@ const Footer = () => {
                     href="https://github.com/ilonanmaa"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="fs-1 me-2"
+                    className="fs-2 me-2"
                   >
                     <AiFillGithub />
                   </Nav.Link>
@@ -62,7 +62,7 @@ const Footer = () => {
                     href="https://www.linkedin.com/in/ilonama/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="fs-1 ms-2"
+                    className="fs-2 ms-2"
                   >
                     <AiFillLinkedin />
                   </Nav.Link>

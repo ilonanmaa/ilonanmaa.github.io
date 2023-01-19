@@ -42,7 +42,7 @@
       "description": "Software developer in a Scrum team",
       "time": "12/2022-05/2023",
       "type": "Part-time",
-      "info": "Project done at Aalto university as part of the course Software Project",
+      "info": "Project done as part of Aalto university's Software Project course",
       "company": "Beamex"
     },
     "TA": {
@@ -81,7 +81,7 @@
       "title": "Personal website",
       "description": "Personal CV website and my project for learning front-end development with React. This project uses React-Bootstrap library. Hosted on GitHub Pages.",
       "repository": "Repository",
-      "demo": "Video"
+      "demo": "Demo"
     }
   },
   "footer": {
