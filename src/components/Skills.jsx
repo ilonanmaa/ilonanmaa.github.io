@@ -5,12 +5,16 @@ import "react-multi-carousel/lib/styles.css";
 import "react-circular-progressbar/dist/styles.css";
 import "../App.css";
 import StarRating from "./StarRating";
+import { useTranslation } from "react-i18next";
 
 const Skills = () => {
+  const { t } = useTranslation("translation", {
+    keyPrefix: "skills",
+  });
   return (
     <div className="skills-container-bg p-4" id="skills">
       <Container className="skills-container bg-dark">
-        <h2 className="fw-bolder mb-5 text-uppercase">Skills</h2>
+        <h2 className="fw-bolder mb-5 text-uppercase">{t("title")}</h2>
         <Tab.Container>
           <Nav
             className="tab-bar-pill d-flex justify-content-center rounded mx-auto"
@@ -22,7 +26,7 @@ const Skills = () => {
                 eventKey="technical"
                 className="rounded-start border border-white fs-5"
               >
-                Technical
+                {t("technical.title")}
               </Nav.Link>
             </Nav.Item>
             <Nav.Item className="languages-key">
@@ -30,7 +34,7 @@ const Skills = () => {
                 eventKey="languages"
                 className="rounded-end border border-white fs-5"
               >
-                Languages
+                {t("languages.title")}
               </Nav.Link>
             </Nav.Item>
           </Nav>
@@ -81,25 +85,28 @@ const Technical = () => {
 };
 
 const Languages = () => {
+  const { t } = useTranslation("translation", {
+    keyPrefix: "skills.languages",
+  });
   return (
     <div className="pt-4 px-2 fs-5 fw-bold">
       <div className="mb-4">
-        Finnish ─ native <StarRating count={5} />{" "}
+        {t("finnish")} <StarRating count={5} />{" "}
       </div>
       <div className="mb-4">
-        English ─ fluent
+        {t("english")}
         <StarRating count={5} />
       </div>
       <div className="mb-4">
-        Chinese ─ native (spoken)
+        {t("chinese")}
         <StarRating count={4} />
       </div>
       <div className="mb-4">
-        German ─ intermediate
+        {t("german")}
         <StarRating count={3} />
       </div>
       <div>
-        Swedish ─ beginner <StarRating count={1} />
+        {t("swedish")} <StarRating count={1} />
       </div>
     </div>
   );

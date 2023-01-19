@@ -1,3 +1,95 @@
 {
-  "welcome": "Tervetuloa portfoliooni!"
+  "welcome": "Tervetuloa portfoliooni!",
+  "menu": {
+    "home": "Koti",
+    "education": "Koulutus",
+    "experience": "Kokemus",
+    "skills": "Taidot",
+    "projects": "Projektit",
+    "language": "Kieli"
+  },
+  "education": {
+    "title": "Koulutus",
+    "university": {
+      "bachelor-title": "Tekniikan kandidaatti",
+      "time": "09/2020-06/2023 (ennuste)",
+      "university": "Aalto yliopisto",
+      "major": "Pääaineena tietotekniikka",
+      "minor": "Sivuaineena quantum technology",
+      "location": "Espoo, Suomi",
+      "relevant-courses": "Kurssit",
+      "courses": {
+        "1": "Ohjelmointi 1 and 2"
+      }
+    },
+    "high-school": {
+      "title": "Ylioppilastutkinto",
+      "time": "08/2017-06/2020",
+      "school": "Ressun lukio",
+      "german-diploma": "Saksan kielidiplomi II (Deutsches Sprachdiplom - DSD II)",
+      "location": "Helsinki, Suomi"
+    }
+  },
+  "experience": {
+    "title": "Kokemus",
+    "software-developer": {
+      "title": "Software developer",
+      "description": "Software developer Scrum tiimissä",
+      "time": "12/2022-05/2023",
+      "type": "Osa-aikainen",
+      "info": "Projekti tehty osana Aalto yliopiston kurssia Software Project",
+      "company": "Beamex"
+    },
+    "TA": {
+      "title": "Tuntiassistentti",
+      "description": "Tuntiassistentti Ohjelmointi 1 kurssilla",
+      "time": "09/2022-12/2022",
+      "type": "Osa-aikainen",
+      "company": "Aalto yliopisto"
+    },
+    "stablehand": {
+      "title": "Tallityöntekijä",
+      "description": "Tallityöntakijä ratsastuskoulussa",
+      "time": "09/2018-03/2022",
+      "type": "Osa-aikaisena ja kesätyöläisenä",
+      "company": "Leppävaaran ratsastuskoulu"
+    }
+  },
+  "skills": {
+    "title": "Taidot",
+    "technical": {
+      "title": "Tekniset"
+    },
+    "languages": {
+      "title": "Kielet",
+      "finnish": "Suomi ─ äidinkieli",
+      "english": "Englanti ─ sujuva",
+      "chinese": "Puhuttu Kiina ─ äidinkieli",
+      "german": "Saksa ─ keskitaso",
+      "swedish": "Ruotsi ─ perusteet"
+    }
+  },
+  "projects": {
+    "title": "Projektit",
+    "portfolio": {
+      "title": "Persoonallinen porfolio",
+      "description": "Persoonallinen portfolio ja projekti front-end kehityksen ja React:n opetteluun. Projekti käyttää React-bootstrap kirjasto, ja sivut hostataan GitHub Sivuilla.",
+      "repository": "Repository",
+      "demo": "Video"
+    }
+  },
+  "footer": {
+    "credits": {
+      "title": "Tiedot",
+      "banner": "Banneri kuva: ",
+      "background": "Tähtitaivas taustakuva "
+    },
+    "contact": {
+      "title": "Yhteystiedot",
+      "mail": "ilona.ma0909(at)gmail.com"
+    },
+    "socials": {
+      "title": "Linkit"
+    }
+  }
 }

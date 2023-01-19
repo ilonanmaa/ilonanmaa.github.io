@@ -68,6 +68,7 @@ body {
   background-color: azure;
   background-clip: text;
   color: transparent;
+  font-weight: 900;
 }
 
 a,
@@ -84,7 +85,6 @@ a:hover,
   background-color: transparent;
 }
 
-a:active,
 .nav-link:active,
 .btn-link:active,
 .nav-link:visited,
@@ -117,6 +117,7 @@ a:active,
   color: azure;
 }
 
+/****Modal CSS****/
 .modal {
   color: black;
 }
@@ -293,23 +294,6 @@ a:active,
   }
 }
 
-/****Footer CSS****/
-
-.footer {
-  background-color: #151515;
-  border-collapse: collapse;
-  border-top: 3px solid;
-  border-image: linear-gradient(
-      to left,
-      rgba(146, 99, 203, 1) 20%,
-      rgba(108, 181, 220, 1) 45%,
-      rgba(80, 101, 171, 1) 59%,
-      rgba(87, 44, 142, 1) 81%,
-      rgba(53, 30, 106, 1) 100%
-    )
-    1;
-}
-
 /****Star rating CSS****/
 
 .star-rating {
@@ -317,6 +301,7 @@ a:active,
   background-clip: text;
 }
 
+/****Side menu CSS****/
 #sidemenu {
   position: fixed;
   top: 0px;
@@ -339,5 +324,16 @@ a:active,
   translate: 0px !important;
 }
 
-.contact-list {
+/****Footer CSS****/
+.copyright-bar {
+  border-top: 3px solid;
+  border-image: linear-gradient(
+      to right,
+      rgba(146, 99, 203, 1) 20%,
+      rgba(108, 181, 220, 1) 45%,
+      rgba(80, 101, 171, 1) 59%,
+      rgba(87, 44, 142, 1) 81%,
+      rgba(53, 30, 106, 1) 100%
+    )
+    1;
 }

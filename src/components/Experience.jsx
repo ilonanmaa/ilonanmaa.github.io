@@ -1,68 +1,68 @@
-import { Container, Modal, Row, CardGroup, Button } from "react-bootstrap";
-import { Carousel, Card } from "react-bootstrap";
-import { useState } from "react";
+import { Container, Row, CardGroup } from "react-bootstrap";
+import { Card } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 
 const Experience = () => {
+  const { t } = useTranslation("translation", { keyPrefix: "experience" });
   return (
     <div className="text-center p-4" id="experience">
       <Container className="p-4">
         <Row>
-          <h2 className="fw-bolder mb-4 text-uppercase">Experience</h2>
+          <h2 className="fw-bolder mb-4 text-uppercase">{t("title")}</h2>
         </Row>
         <Row>
           <CardGroup>
             <Card>
               <Card.Body className="bg-dark">
                 <Card.Title className="fs-4 fw-bolder p-2">
-                  Software Developer
+                  {t("software-developer.title")}
                 </Card.Title>
                 <Card.Subtitle className="mb-3 opacity-75">
-                  09/2022-12/2022
+                  {t("software-developer.time")}
                 </Card.Subtitle>
                 <ul className="text-start fs-5 lh-lg">
                   <li className="fw-bolder">
-                    Software developer in a scrum team
+                    {t("software-developer.description")}
                   </li>
                   <ul>
-                    <li>Part-time</li>
-                    <li>Project done for courses Software project 1 and 2</li>
+                    <li>{t("software-developer.type")}</li>
+                    <li>{t("software-developer.info")}</li>
                   </ul>
-                  <li>Beamex</li>
+                  <li>{t("software-developer.company")}</li>
                 </ul>
               </Card.Body>
             </Card>
             <Card>
               <Card.Body className="bg-dark">
                 <Card.Title className="fs-4 fw-bolder p-2">
-                  Teaching Assistant TA
+                  {t("TA.title")}
                 </Card.Title>
                 <Card.Subtitle className="mb-3 opacity-75">
-                  09/2022-12/2022
+                  {t("TA.time")}
                 </Card.Subtitle>
                 <ul className="text-start fs-5 lh-lg">
-                  <li className="fw-bolder">TA for Programming 1</li>
+                  <li className="fw-bolder">{t("TA.description")}</li>
                   <ul>
-                    <li>Part-time</li>
+                    <li>{t("TA.type")}</li>
                   </ul>
-                  <li>Aalto University</li>
+                  <li>{t("TA.company")}</li>
                 </ul>
               </Card.Body>
             </Card>
             <Card>
               <Card.Body className="bg-dark">
                 <Card.Title className="fs-4 fw-bolder p-2">
-                  Stablehand
+                  {t("stablehand.title")}
                 </Card.Title>
                 <Card.Subtitle className="mb-3 opacity-75">
-                  09/2018-03/2022
+                  {t("stablehand.time")}
                 </Card.Subtitle>
                 <ul className="text-start fs-5 lh-lg">
-                  <li className="fw-bolder">Stablehand in a riding school</li>
+                  <li className="fw-bolder">{t("stablehand.description")}</li>
                   <ul>
-                    <li>Part-time</li>
-                    <li>Summer job</li>
+                    <li>{t("stablehand.type")}</li>
                   </ul>
-                  <li>Leppävaaran ratsastuskoulu</li>
+                  <li>{t("stablehand.company")}</li>
                 </ul>
               </Card.Body>
             </Card>

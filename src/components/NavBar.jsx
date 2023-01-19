@@ -1,10 +1,16 @@
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import i18n from "../i18n/config";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-import { Button } from "react-bootstrap";
+import { FaGlobeAmericas } from "react-icons/fa";
+import {
+  NavDropdown,
+  Navbar,
+  Nav,
+  Dropdown,
+  DropdownButton,
+} from "react-bootstrap";
+import ReactCountryFlag from "react-country-flag";
 
 const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -58,8 +64,11 @@ const NavBar = () => {
     }
   });
 
+  const [language, setLanguage] = useState("en");
+
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
+    setLanguage(lng);
   };
 
   const { t } = useTranslation("translation", { keyPrefix: "menu" });
@@ -113,7 +122,7 @@ const NavBar = () => {
                 href="https://github.com/ilonanmaa"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="nav-link fs-1 fw-bold"
+                className="fs-1 fw-bold"
               >
                 <AiFillGithub />
               </Nav.Link>
@@ -121,14 +130,24 @@ const NavBar = () => {
                 href="https://www.linkedin.com/in/ilonama/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="nav-link fs-1 fw-bold"
+                className="fs-1 fw-bold"
               >
                 <AiFillLinkedin />
               </Nav.Link>
             </div>
             <div className="d-flex flex-row">
-              <Button onClick={() => changeLanguage("fi")}>Suomi</Button>
-              <Button onClick={() => changeLanguage("en")}>English</Button>
+              <Nav.Link
+                className="fs-2 fw-bold"
+                onClick={() => changeLanguage("en")}
+              >
+                <ReactCountryFlag countryCode="gb" svg />
+              </Nav.Link>
+              <Nav.Link
+                className="fs-2 fw-bold"
+                onClick={() => changeLanguage("fi")}
+              >
+                <ReactCountryFlag countryCode="fi" svg />
+              </Nav.Link>
             </div>
           </div>
         </Nav>
@@ -137,8 +156,8 @@ const NavBar = () => {
         expand="lg"
         className={
           scrolled || !sideMenuHidden
-            ? "navbar-scrolled px-4 d-flex flex-row justify-content-between align-items-center bg-dark"
-            : "navbar-notscrolled px-4 d-flex flex-row justify-content-between align-items-center"
+            ? "navbar-scrolled px-5 d-flex flex-row justify-content-between align-items-center bg-dark"
+            : "navbar-notscrolled px-5 d-flex flex-row justify-content-between align-items-center"
         }
         variant="dark"
         fixed="top"
@@ -152,22 +171,55 @@ const NavBar = () => {
           aria-expanded="false"
         />
         <div id="navbar-expanded" hidden={hidden}>
-          <Nav>
+          <Nav className="align-items-center d-flex d-row">
             <Nav.Link className="nav-link fs-4 fw-bold" href="#home">
-              Home
+              {t("home")}
             </Nav.Link>
             <Nav.Link className="nav-link fs-4 fw-bold" href="#education">
-              Education
+              {t("education")}
             </Nav.Link>
             <Nav.Link className="nav-link fs-4 fw-bold" href="#experience">
-              Experience
+              {t("experience")}
             </Nav.Link>
             <Nav.Link className="nav-link fs-4 fw-bold" href="#skills">
-              Skills
+              {t("skills")}
             </Nav.Link>
             <Nav.Link className="nav-link fs-4 fw-bold" href="#projects">
-              Projects
+              {t("projects")}
             </Nav.Link>
+            <Nav.Link
+              href="https://github.com/ilonanmaa"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="fs-1 fw-bold"
+            >
+              <AiFillGithub />
+            </Nav.Link>
+            <Nav.Link
+              href="https://www.linkedin.com/in/ilonama/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="fs-1 fw-bold"
+            >
+              <AiFillLinkedin />
+            </Nav.Link>
+            <div>
+              {language === "fi" ? (
+                <Nav.Link
+                  className="fs-1 fw-bold"
+                  onClick={() => changeLanguage("en")}
+                >
+                  <ReactCountryFlag countryCode="gb" svg />
+                </Nav.Link>
+              ) : (
+                <Nav.Link
+                  className="fs-1 fw-bold"
+                  onClick={() => changeLanguage("fi")}
+                >
+                  <ReactCountryFlag countryCode="fi" svg />
+                </Nav.Link>
+              )}
+            </div>
           </Nav>
         </div>
       </Navbar>

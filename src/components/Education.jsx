@@ -1,9 +1,14 @@
-import { Container, Modal, Row, CardGroup, Button } from "react-bootstrap";
+import { Container, Modal, Row, CardGroup, Button, Nav } from "react-bootstrap";
 import { Card } from "react-bootstrap";
 import { useState } from "react";
 import { IoLocationSharp } from "react-icons/io5";
+import { useTranslation } from "react-i18next";
 
 const Education = () => {
+  const { t } = useTranslation("translation", {
+    keyPrefix: "education",
+  });
+
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -13,56 +18,58 @@ const Education = () => {
     <div id="education" className="p-4">
       <Container className=" text-center p-4">
         <Row>
-          <h2 className="fw-bolder mb-4 text-uppercase">Education</h2>
+          <h2 className="fw-bolder mb-4 text-uppercase">{t("title")}</h2>
         </Row>
         <Row>
           <CardGroup>
             <Card>
               <Card.Body className="bg-dark">
                 <Card.Title className="fs-4 fw-bolder p-2">
-                  Bachelor of Science in Technology
+                  {t("university.bachelor-title")}
                 </Card.Title>
                 <Card.Subtitle className="mb-3 opacity-75">
-                  09/2020-06/2023 (expected)
+                  {t("university.time")}
                 </Card.Subtitle>
                 <ul className="text-start fs-5 lh-lg">
-                  <li className="fw-bolder">Aalto University</li>
+                  <li className="fw-bolder">{t("university.university")}</li>
                   <ul>
-                    <li>Major in computer science</li>
-                    <li>Minor in quantum technology</li>
+                    <li>{t("university.major")}</li>
+                    <li>{t("university.minor")}</li>
                   </ul>
                   <li>
                     {" "}
                     <IoLocationSharp className="mx-2" />
-                    Espoo, Finland
+                    {t("university.location")}
                   </li>
                 </ul>
                 <Card.Footer className="bg-dark border-0">
                   {" "}
-                  <Button onClick={handleShow} variant="link" className="fs-5">
-                    Relevant Courses
-                  </Button>
+                  <Nav.Link
+                    onClick={handleShow}
+                    variant="link"
+                    className="fs-5"
+                  >
+                    {t("university.relevant-courses")}
+                  </Nav.Link>
                 </Card.Footer>
               </Card.Body>
             </Card>
             <Card>
               <Card.Body className="bg-dark">
                 <Card.Title className="fs-4 fw-bolder p-2">
-                  High School Diploma
+                  {t("high-school.title")}
                 </Card.Title>
                 <Card.Subtitle className="mb-3 opacity-75">
-                  08/2017-06/2020
+                  {t("high-school.time")}
                 </Card.Subtitle>
                 <ul className="text-start fs-5 lh-lg">
-                  <li className="fw-bolder"> Ressu High School</li>
+                  <li className="fw-bolder"> {t("high-school.school")}</li>
                   <ul>
-                    <li>
-                      German Language Diploma II (Deutsches Sprachdiplom - DSD
-                      II)
-                    </li>
+                    <li>{t("high-school.german-diploma")}</li>
                   </ul>
                   <li>
-                    <IoLocationSharp className="mx-2" /> Helsinki, Finland
+                    <IoLocationSharp className="mx-2" />{" "}
+                    {t("high-school.location")}
                   </li>
                 </ul>
               </Card.Body>
@@ -76,6 +83,9 @@ const Education = () => {
 };
 
 const Courses = ({ show, handleClose }) => {
+  const { t } = useTranslation("translation", {
+    keyPrefix: "education.university",
+  });
   return (
     <Modal show={show} onHide={handleClose}>
       <Modal.Header closeButton>
@@ -83,7 +93,7 @@ const Courses = ({ show, handleClose }) => {
       </Modal.Header>
       <Modal.Body>
         <ul>
-          <li>Programming 1 and 2</li>
+          <li>{t("courses.1")}</li>
           <li>Programming Studio 1 </li>
           <li>Programming Studio 2: project </li>
           <li>Basic Course in C programming</li>

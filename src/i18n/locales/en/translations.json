@@ -1,3 +1,95 @@
 {
-  "welcome": "Welcome to my CV!"
+  "welcome": "Welcome to my CV!",
+  "menu": {
+    "home": "Home",
+    "education": "Education",
+    "experience": "Experience",
+    "skills": "Skills",
+    "projects": "Projects",
+    "language": "Language"
+  },
+  "education": {
+    "title": "Education",
+    "university": {
+      "bachelor-title": "Bachelor of Science in Technology",
+      "time": "09/2020-06/2023 (expected)",
+      "university": "Aalto university",
+      "major": "Major in computer science",
+      "minor": "Minor in quantum technology",
+      "location": "Espoo, Finland",
+      "relevant-courses": "Relevant courses",
+      "courses": {
+        "1": "Programming 1 and 2"
+      }
+    },
+    "high-school": {
+      "title": "High School Diploma",
+      "time": "08/2017-06/2020",
+      "school": "Ressu high school",
+      "german-diploma": "German Language Diploma II (Deutsches Sprachdiplom - DSD II)",
+      "location": "Helsinki, Finland"
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "software-developer": {
+      "title": "Software developer",
+      "description": "Software developer in a Scrum team",
+      "time": "12/2022-05/2023",
+      "type": "Part-time",
+      "info": "Project done at Aalto university as part of the course Software Project",
+      "company": "Beamex"
+    },
+    "TA": {
+      "title": "Teaching assistant TA",
+      "description": "Teaching assistant for course Programmin 1",
+      "time": "09/2022-12/2022",
+      "type": "Part-time",
+      "company": "Aalto university"
+    },
+    "stablehand": {
+      "title": "Stablehand",
+      "description": "Stablehand in a riding school",
+      "time": "09/2018-03/2022",
+      "type": "Part-time and summer job",
+      "company": "Leppävaara riding school"
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "technical": {
+      "title": "Technical"
+    },
+    "languages": {
+      "title": "Languages",
+      "finnish": "Finnish ─ native",
+      "english": "English ─ fluent",
+      "chinese": "Spoken chinese ─ native",
+      "german": "German ─ intermediate",
+      "swedish": "Swedish ─ basics"
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "portfolio": {
+      "title": "Personal website",
+      "description": "Personal CV website and my project for learning front-end development with React. This project uses React-Bootstrap library. Hosted on GitHub Pages.",
+      "repository": "Repository",
+      "demo": "Video"
+    }
+  },
+  "footer": {
+    "credits": {
+      "title": "Site info",
+      "banner": "Banner image by",
+      "background": "Night sky stars background photo by"
+    },
+    "contact": {
+      "title": "Contact",
+      "mail": "ilona.ma0909(at)gmail.com"
+    },
+    "socials": {
+      "title": "Links"
+    }
+  }
 }

@@ -1,22 +1,16 @@
 import { light } from "@mui/material/styles/createPalette";
-import {
-  Container,
-  Card,
-  Row,
-  Col,
-  ListGroup,
-  CardGroup,
-} from "react-bootstrap";
-import { Badge } from "reactstrap";
+import { Container, Card, Row, Col, CardGroup } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 import projectBG from "../assets/img/banner-bg.jpg";
 import SkillBadge from "./SkillBadge";
 
 const Projects = () => {
+  const { t } = useTranslation("translation", { keyPrefix: "projects" });
   return (
     <div className="p-4" id="projects">
       <Container>
         <Row className="text-center">
-          <h2 className="fw-bolder mb-4 text-uppercase">Projects</h2>
+          <h2 className="fw-bolder mb-4 text-uppercase">{t("title")}</h2>
         </Row>
         <Row>
           <Col className="d-flex flex-column align-items-center">
@@ -25,15 +19,13 @@ const Projects = () => {
                 <Card.Img variant="top" src={projectBG} />
                 <Card.Body className="bg-dark">
                   <Card.Title className="fs-4 fw-bolder p-2 text-center">
-                    Personal website{" "}
+                    {t("portfolio.title")}{" "}
                   </Card.Title>
                   <Card.Text
                     className="lh-lg fs-5"
                     style={{ textAlign: "justify" }}
                   >
-                    Personal CV website and my project for learning front-end
-                    development with React. This project uses React-Bootstrap
-                    library. Hosted on GitHub Pages.
+                    {t("portfolio.description")}
                   </Card.Text>
                   <div className="d-flex flex-row justify-content-between">
                     <Card.Link
@@ -43,7 +35,7 @@ const Projects = () => {
                       className="fs-5 mb-3"
                     >
                       {" "}
-                      Repository
+                      {t("portfolio.repository")}
                     </Card.Link>
                     <Card.Link
                       href="https://ilonanmaa.github.io"
@@ -52,7 +44,7 @@ const Projects = () => {
                       className="fs-5 mb-3"
                     >
                       {" "}
-                      Page
+                      {t("portfolio.demo")}
                     </Card.Link>
                   </div>
                   <Card.Footer className="d-flex flex-row justify-content-evenly border-top border-azure">
