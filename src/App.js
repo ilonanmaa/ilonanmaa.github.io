@@ -9,20 +9,14 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
-import i18n from "./i18n/config";
+import ShootingStars from "./components/ShootingStars";
 
 const App = () => {
   return (
     <div className="app">
       <NavBar />
       <section className="banner-education-section">
-        <section id="shooting-stars">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </section>
+        <ShootingStars />
         <Banner />
         <Education />
       </section>
