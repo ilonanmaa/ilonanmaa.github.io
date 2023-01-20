@@ -20,7 +20,14 @@
       "relevant-courses": "Kurssit",
       "thesis": "Kandityö aiheesta",
       "courses": {
-        "1": "Ohjelmointi 1 and 2"
+        "CS-A1110": "Ohjelmointi 1",
+        "CS-A1120": "Programming 2",
+        "CS-C2100": "Ohjelmointistudio 1",
+        "CS-C2120": "Ohjelmointistudio 2",
+        "CS-A1140": "Data Structures and Algorithms",
+        "CS-C3170": "Web Software Development",
+        "CS-E4580": "Programming Parallel Computers D",
+        "CS-C2130": "Software Project"
       }
     },
     "high-school": {
@@ -29,7 +36,8 @@
       "school": "Ressun lukio",
       "exams": {
         "exam": "Ylioppilaskokeet",
-        "subjects": "Pitkä matematiikka, Kemia, Fysiikka, Suomi, Englanti & Saksa"
+        "science": "Pitkä matematiikka, kemia & fysiikka",
+        "languages": "Suomi, englanti & saksa"
       },
       "german-diploma": "Saksan kielidiplomi II (Deutsches Sprachdiplom - DSD II)",
       "location": "Helsinki, Suomi"
@@ -43,7 +51,7 @@
       "time": "12/2022-05/2023",
       "type": "Osa-aikainen",
       "info": "Projekti tehty osana Aalto yliopiston kurssia Software Project",
-      "company": "Beamex"
+      "company": "Aalto yliopisto/Beamex"
     },
     "TA": {
       "title": "Tuntiassistentti",

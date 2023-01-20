@@ -36,7 +36,7 @@ const Education = () => {
                     {t("university.time")}
                   </Card.Subtitle>
                 </div>
-                <ul className="text-start fs-6 lh-lg my-2">
+                <ul className="text-start fs-6 lh-lg mt-2">
                   <li>{t("university.major")}</li>
                   <ul>
                     <li>
@@ -46,16 +46,19 @@ const Education = () => {
                         games
                       </span>
                     </li>
+                    <li>
+                      <Button
+                        onClick={handleShow}
+                        variant="link"
+                        className="fs-6"
+                      >
+                        {t("university.relevant-courses")}
+                      </Button>
+                    </li>
                   </ul>
                   <li>{t("university.minor")}</li>
                   <li>{t("university.location")}</li>
                 </ul>
-                <Card.Footer className="bg-dark border-0">
-                  {" "}
-                  <Button onClick={handleShow} variant="link" className="fs-6">
-                    {t("university.relevant-courses")}
-                  </Button>
-                </Card.Footer>
               </Card.Body>
             </Card>
             <Card>
@@ -71,11 +74,15 @@ const Education = () => {
                     {t("high-school.time")}
                   </Card.Subtitle>
                 </div>
-                <ul className="text-start fs-6 lh-lg my-2">
+                <ul className="text-start fs-6 lh-lg mt-2">
                   <li>{t("high-school.exams.exam")}</li>
                   <ul>
-                    <li>Science: {t("high-school.exams.subjects")}</li>
-                    <li>Languages: {t("high-school.exams.subjects")}</li>
+                    <li>{t("high-school.exams.science")}</li>
+                    <li>{t("high-school.exams.languages")}</li>
+                  </ul>
+                  <li>Additional</li>
+                  <ul>
+                    <li>{t("high-school.german-diploma")}</li>
                   </ul>
                   <li>{t("high-school.location")}</li>
                 </ul>
@@ -96,27 +103,75 @@ const Courses = ({ show, handleClose }) => {
   return (
     <Modal show={show} onHide={handleClose}>
       <Modal.Header closeButton>
-        <Modal.Title className="fw-bold">Relevant courses</Modal.Title>
+        <Modal.Title className="fw-bold">{t("relevant-courses")}</Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <ul>
-          <li>{t("courses.1")}</li>
-          <li>Programming Studio 1 </li>
-          <li>Programming Studio 2: project </li>
-          <li>Basic Course in C programming</li>
-          <li>Programming Parallel Computers D</li>
-          <li>Web Software Development</li>
-          <li>Data Structures and Algorithms</li>
-          <li>Software Project 1 and 2</li>
+        <ul className="list-unstyled ">
+          <CourseInput
+            name={t("courses.CS-A1110")}
+            link="https://sisu.aalto.fi/student/courseunit/otm-49b90b5f-7a82-4255-9b68-7ce91fe3964a/brochure"
+            code="CS-A1110"
+          />
+          <CourseInput
+            name={t("courses.CS-A1120")}
+            link="https://sisu.aalto.fi/student/courseunit/otm-903337e3-89fb-4b89-8fff-ce2c1ba66232/brochure"
+            code="CS-A1120"
+          />
+          <CourseInput
+            name={t("courses.CS-C2100")}
+            code="CS-C2100"
+            link="https://sisu.aalto.fi/student/courseunit/otm-61e4c7bf-23c2-486d-bcad-2183f02bc7db/brochure"
+          />
+          <CourseInput
+            name={t("courses.CS-C2120")}
+            code="CS-C2120"
+            link="https://sisu.aalto.fi/student/courseunit/otm-adda76fa-574c-4e63-9b48-27da63887a1e/brochure"
+          />
+          <CourseInput
+            name={t("courses.CS-A1140")}
+            link="https://sisu.aalto.fi/student/courseunit/otm-c09c8242-5e9f-46e6-a38c-8855d9578cc1/brochure"
+            code="CS-A1140"
+          />
+          <CourseInput
+            name={t("courses.CS-C3170")}
+            link="https://sisu.aalto.fi/student/courseunit/otm-b315be41-994c-4441-8719-b8030dc49479/brochure"
+            code="CS-C3170"
+          />
+          <CourseInput
+            name={t("courses.CS-E4580")}
+            link="https://sisu.aalto.fi/student/courseunit/otm-f7b6f20a-cef7-487d-83a3-b526c84b63c6/brochure"
+            code="CS-E4580"
+          />
+          <CourseInput
+            name={t("courses.CS-C2130")}
+            link="https://sisu.aalto.fi/student/courseunit/otm-8653c56f-f588-4195-94f8-8526ed47fd12/brochure"
+            code="CS-C2130"
+          />
         </ul>
       </Modal.Body>
       <Modal.Footer>
-        <Button variant="secondary" onClick={handleClose}>
-          Close
+        <Button variant="primary" onClick={handleClose}>
+          OK
         </Button>
       </Modal.Footer>
     </Modal>
   );
 };
 
+const CourseInput = ({ name, link, code }) => {
+  return (
+    <li className="d-flex flex-row justify-content-between border-bottom">
+      <span className="fw-light">{name}</span>
+      <a href={link}>{code}</a>
+    </li>
+  );
+};
+
 export default Education;
+
+/**         <li>Programming Studio 1 </li>
+          <li>Programming Studio 2: project </li>
+          <li>Basic Course in C programming</li>
+          <li>Programming Parallel Computers D</li>
+          <li>Web Software Development</li>
+          <li>Software Project 1 and 2</li> */

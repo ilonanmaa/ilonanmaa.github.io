@@ -1,5 +1,5 @@
 {
-  "welcome": "Welcome to my CV!",
+  "welcome": "Welcome to my portfolio!",
   "menu": {
     "home": "Home",
     "education": "Education",
@@ -20,7 +20,14 @@
       "relevant-courses": "Relevant courses",
       "thesis": "Bachelor's thesis on",
       "courses": {
-        "1": "Programming 1"
+        "CS-A1110": "Programming 1",
+        "CS-A1120": "Programming 2",
+        "CS-C2100": "Programming Studio 1",
+        "CS-C2120": "Programming Studio 2",
+        "CS-A1140": "Data Structures and Algorithms",
+        "CS-C3170": "Web Software Development",
+        "CS-E4580": "Programming Parallel Computers D",
+        "CS-C2130": "Software Project"
       }
     },
     "high-school": {
@@ -29,7 +36,8 @@
       "school": "Ressu high school",
       "exams": {
         "exam": "Matriculation examination",
-        "subjects": "Mathematics, Chemistry, Physics, Finnish, English & German"
+        "science": "Mathematics, chemistry & physics",
+        "languages": "Finnish, English & German"
       },
       "german-diploma": "German Language Diploma II (Deutsches Sprachdiplom - DSD II)",
       "location": "Helsinki, Finland"
@@ -43,7 +51,7 @@
       "time": "12/2022-05/2023",
       "type": "Part-time",
       "info": "Project done as part of Aalto university's Software Project course",
-      "company": "Beamex"
+      "company": "Aalto university/Beamex"
     },
     "TA": {
       "title": "Teaching assistant TA",
@@ -88,7 +96,7 @@
     "credits": {
       "title": "Site info",
       "banner": "Banner image by",
-      "background": "Night sky stars background photo by"
+      "background": "Stars background photo by"
     },
     "contact": {
       "title": "Contact",
