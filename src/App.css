@@ -167,6 +167,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 2rem;
+  border: transparent;
 }
 
 .skills-container {
@@ -263,7 +264,13 @@ body {
 
 .badge {
   margin: 0.5rem;
-  font-size: x-small;
+  font-size: small;
+}
+
+@media only screen and (max-width: 480px) {
+  .badge {
+    font-size: x-small;
+  }
 }
 
 /****Star rating CSS****/
@@ -279,11 +286,11 @@ body {
   top: 0px;
   bottom: 0px;
   right: 0px;
-  padding: 100px;
   color: azure;
   width: 75%;
   translate: 100%;
   z-index: 1;
+  padding-top: 100px;
 }
 
 .navbar-item {
@@ -310,6 +317,10 @@ body {
     1;
 }
 
+.profile-img {
+  width: 100px;
+  height: 100px;
+}
 /****Banner and Education component CSS****/
 
 .banner-education-section {
@@ -400,4 +411,12 @@ body {
   left: 200%;
   animation-delay: 0.2s;
   animation-duration: 6s;
+}
+
+#shooting-stars span:nth-child(6) {
+  top: 10%;
+  right: 45%;
+  left: initial;
+  animation-delay: 0.1s;
+  animation-duration: 3s;
 }

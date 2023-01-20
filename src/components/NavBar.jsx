@@ -1,16 +1,19 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import i18n from "../i18n/config";
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-import { FaGlobeAmericas } from "react-icons/fa";
 import {
-  NavDropdown,
-  Navbar,
-  Nav,
-  Dropdown,
-  DropdownButton,
-} from "react-bootstrap";
+  AiFillGithub,
+  AiFillLinkedin,
+  AiOutlineHome,
+  AiOutlineCode,
+  AiOutlineProject,
+} from "react-icons/ai";
+import { SlGraduation } from "react-icons/sl";
+import { MdOutlineComputer } from "react-icons/md";
+import { FaGlobeAmericas } from "react-icons/fa";
+import { Image, Navbar, Nav, Dropdown, DropdownButton } from "react-bootstrap";
 import ReactCountryFlag from "react-country-flag";
+import profile from "../assets/img/profile.jpg";
 
 const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -31,24 +34,6 @@ const NavBar = () => {
 
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
-
-  //let isVisible = false;
-
-  /*const toggleNavbarVisibility = () => {
-    const navbar = document.getElementById("navbar");
-    const items = document.getElementsByClassName("nav-link");
-
-    navbar.style.opacity = 1;
-    // To hide on page load
-
-    if (isVisible) {
-      navbar.classList.remove("navbar-visible");
-    } else {
-      navbar.classList.add("navbar-visible");
-    }
-
-    isVisible = !isVisible;
-  };*/
 
   const [sideMenuHidden, setSideHidden] = useState(true);
 
@@ -77,78 +62,100 @@ const NavBar = () => {
       <div
         id="sidemenu"
         hidden={sideMenuHidden}
-        className="bg-dark navbar-visible"
+        className="bg-dark navbar-visible px-3"
+        style={{ overflowY: "scroll" }}
       >
-        <Nav id="side-navbar">
-          <div className="d-flex flex-column">
+        <Nav id="side-navbar" className="d-flex flex-column">
+          <div className="flex-column d-flex align-items-center border-bottom py-2">
+            <div
+              style={{ display: "block" }}
+              className="justify-content-center flex-row d-flex"
+            >
+              <Image src={profile} className="profile-img" roundedCircle />
+            </div>
+            <span className="fw-bolder">Ilona Ma</span>
+          </div>
+          <div className="d-flex flex-row align-items-center justify-content-between">
             <Nav.Link
-              className="nav-link fs-4 fw-bold"
+              className="nav-link fs-5 fw-bold"
               href="#home"
               onClick={() => setSideHidden(!sideMenuHidden)}
             >
               {t("home")}
             </Nav.Link>
+            <AiOutlineHome className="fs-1" />
+          </div>
+          <div className="d-flex flex-row align-items-center justify-content-between">
             <Nav.Link
-              className="nav-link fs-4 fw-bold"
+              className="nav-link fs-5 fw-bold"
               href="#education"
               onClick={() => setSideHidden(!sideMenuHidden)}
             >
               {t("education")}
             </Nav.Link>
+            <SlGraduation className="fs-1" />
+          </div>
+          <div className="d-flex flex-row align-items-center justify-content-between">
             <Nav.Link
-              className="nav-link fs-4 fw-bold"
+              className="nav-link fs-5 fw-bold"
               href="#experience"
               onClick={() => setSideHidden(!sideMenuHidden)}
             >
               {t("experience")}
             </Nav.Link>
+            <MdOutlineComputer className="fs-1" />
+          </div>
+          <div className="d-flex flex-row align-items-center justify-content-between">
             <Nav.Link
-              className="nav-link fs-4 fw-bold"
+              className="nav-link fs-5 fw-bold"
               href="#skills"
               onClick={() => setSideHidden(!sideMenuHidden)}
             >
               {t("skills")}
             </Nav.Link>
+            <AiOutlineCode className="fs-1" />
+          </div>
+          <div className="d-flex flex-row align-items-center justify-content-between">
             <Nav.Link
-              className="nav-link fs-4 fw-bold"
+              className="nav-link fs-5 fw-bold"
               href="#projects"
               onClick={() => setSideHidden(!sideMenuHidden)}
             >
               {t("projects")}
             </Nav.Link>
-
-            <div className="d-flex flex-row">
-              <Nav.Link
-                href="https://github.com/ilonanmaa"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="fs-1 fw-bold"
-              >
-                <AiFillGithub />
-              </Nav.Link>
-              <Nav.Link
-                href="https://www.linkedin.com/in/ilonama/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="fs-1 fw-bold"
-              >
-                <AiFillLinkedin />
-              </Nav.Link>
-            </div>
-            <div className="d-flex flex-row">
-              <Nav.Link
-                className="fs-2 fw-bold"
-                onClick={() => changeLanguage("en")}
-              >
-                <ReactCountryFlag countryCode="gb" svg />
-              </Nav.Link>
-              <Nav.Link
-                className="fs-2 fw-bold"
-                onClick={() => changeLanguage("fi")}
-              >
-                <ReactCountryFlag countryCode="fi" svg />
-              </Nav.Link>
-            </div>
+            <AiOutlineProject className="fs-1" />
+          </div>
+          <div className="d-flex flex-row py-2 justify-content-center">
+            <Nav.Link
+              href="https://github.com/ilonanmaa"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="fs-1 fw-bold"
+            >
+              <AiFillGithub />
+            </Nav.Link>
+            <Nav.Link
+              href="https://www.linkedin.com/in/ilonama/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="fs-1 fw-bold"
+            >
+              <AiFillLinkedin />
+            </Nav.Link>
+          </div>
+          <div className="d-flex flex-row justify-content-center">
+            <Nav.Link
+              className="fs-2 fw-bold"
+              onClick={() => changeLanguage("en")}
+            >
+              <ReactCountryFlag countryCode="gb" svg />
+            </Nav.Link>
+            <Nav.Link
+              className="fs-2 fw-bold"
+              onClick={() => changeLanguage("fi")}
+            >
+              <ReactCountryFlag countryCode="fi" svg />
+            </Nav.Link>
           </div>
         </Nav>
       </div>
@@ -186,22 +193,6 @@ const NavBar = () => {
             </Nav.Link>
             <Nav.Link className="nav-link fs-4 fw-bold" href="#projects">
               {t("projects")}
-            </Nav.Link>
-            <Nav.Link
-              href="https://github.com/ilonanmaa"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="fs-1 fw-bold"
-            >
-              <AiFillGithub />
-            </Nav.Link>
-            <Nav.Link
-              href="https://www.linkedin.com/in/ilonama/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="fs-1 fw-bold"
-            >
-              <AiFillLinkedin />
             </Nav.Link>
             <div>
               {language === "fi" ? (
