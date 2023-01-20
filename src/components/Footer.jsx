@@ -1,21 +1,26 @@
 import React from "react";
 import { MDBFooter, MDBContainer, MDBCol, MDBRow } from "mdb-react-ui-kit";
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import {
+  AiFillGithub,
+  AiFillLinkedin,
+  AiOutlineDownload,
+} from "react-icons/ai";
 import { useTranslation } from "react-i18next";
-import { Nav } from "react-bootstrap";
+import { Button, Nav } from "react-bootstrap";
+import { MdPictureAsPdf } from "react-icons/md";
 
 const Footer = () => {
   const { t } = useTranslation("translation", { keyPrefix: "footer" });
   return (
     <MDBFooter className="" color="white" bgColor="dark">
-      <MDBContainer className="p-4">
+      <MDBContainer className="p-4 text-center">
         <section className="">
-          <MDBRow>
+          <MDBRow className="justify-content-center">
             <MDBCol className="mb-4 mb-md-0">
               <h5 className="text-uppercase fw-bold">{t("credits.title")}</h5>
 
-              <ul className="list-unstyled mb-0">
-                <li className="mb-3">
+              <ul className="list-unstyled mb-0 lh-lg">
+                <li>
                   {t("credits.banner")}{" "}
                   <a href="https://www.freepik.com/free-vector/gradient-galaxy-background_14658088.htm#query=space&position=3&from_view=search&track=sph">
                     Freepik
@@ -46,9 +51,9 @@ const Footer = () => {
             <MDBCol className="mb-4 mb-md-0">
               <h5 className="text-uppercase fw-bold">{t("contact.title")}</h5>
 
-              <ul className="list-unstyled mb-0">
+              <ul className="list-unstyled mb-0 lh-lg">
                 <li className="">{t("contact.mail")}</li>
-                <li className="d-flex flex-row justify-content-start">
+                <li className="d-flex flex-row justify-content-center">
                   {" "}
                   <Nav.Link
                     href="https://github.com/ilonanmaa"
