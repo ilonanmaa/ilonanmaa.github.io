@@ -25,7 +25,7 @@ const Experience = () => {
                     {t("software-developer.time")}
                   </Card.Subtitle>
                 </div>
-                <ul className="text-start fs-6 lh-lg">
+                <ul className="text-start fs-6 lh-lg mt-2">
                   <li className="fw-bolder">
                     {t("software-developer.description")}
                   </li>
@@ -49,12 +49,16 @@ const Experience = () => {
                     {t("TA.time")}
                   </Card.Subtitle>
                 </div>
-                <ul className="text-start fs-6 lh-lg">
+                <ul className="text-start fs-6 lh-lg mt-2">
                   <li className="fw-bolder">{t("TA.description")}</li>
                   <ul>
                     <li>{t("TA.type")}</li>
+                    <li>
+                      <a href="https://sisu.aalto.fi/student/courseunit/otm-49b90b5f-7a82-4255-9b68-7ce91fe3964a/brochure">
+                        CS-A1110
+                      </a>
+                    </li>
                   </ul>
-                  <li>{t("TA.company")}</li>
                 </ul>
               </Card.Body>
             </Card>
@@ -71,12 +75,11 @@ const Experience = () => {
                     {t("stablehand.time")}
                   </Card.Subtitle>
                 </div>
-                <ul className="text-start fs-6 lh-lg">
+                <ul className="text-start fs-6 lh-lg mt-2">
                   <li className="fw-bolder">{t("stablehand.description")}</li>
                   <ul>
                     <li>{t("stablehand.type")}</li>
                   </ul>
-                  <li>{t("stablehand.company")}</li>
                 </ul>
               </Card.Body>
             </Card>

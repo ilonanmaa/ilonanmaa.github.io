@@ -45,11 +45,13 @@ const Projects = () => {
                     {t("portfolio.demo")}
                   </Card.Link>
                 </div>
-                <Card.Footer className="d-flex flex-row justify-content-evenly border-top border-azure">
-                  <SkillBadge text="React" />
-                  <SkillBadge text="HTML/CSS" />
-                  <SkillBadge text="Front-end" />
-                  <SkillBadge text="Git" />
+                <Card.Footer className="border-top border-azure">
+                  <div className="d-flex flex-row justify-content-evenly flex-wrap">
+                    <SkillBadge text="React" />
+                    <SkillBadge text="HTML/CSS" />
+                    <SkillBadge text="Front-end" />
+                    <SkillBadge text="Git" />
+                  </div>
                 </Card.Footer>
               </Card.Body>
             </Card>
