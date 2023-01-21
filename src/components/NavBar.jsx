@@ -71,7 +71,7 @@ const NavBar = () => {
               style={{ display: "block" }}
               className="justify-content-center flex-row d-flex"
             >
-              <Image src={profile} className="profile-img" roundedCircle />
+              <Image src={profile} className="profile-img-1" roundedCircle />
             </div>
             <span className="fw-bolder">Ilona Ma</span>
           </div>

@@ -97,7 +97,20 @@ body {
 
 /****Modal CSS****/
 .modal {
-  color: black;
+  color: azure;
+}
+
+.modal-content {
+  border: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+.modal-close-btn {
+  background-color: rgba(87, 44, 142, 1);
+  border-color: rgba(87, 44, 142, 1);
+}
+
+.course-input {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 /*Stop background from shifting when opening a modal*/
@@ -317,10 +330,6 @@ body {
     1;
 }
 
-.profile-img {
-  width: 100px;
-  height: 100px;
-}
 /****Banner and Education component CSS****/
 
 .banner-education-section {
@@ -334,6 +343,28 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 1rem;
+}
+
+.profile-img-1 {
+  width: 100px;
+  height: 100px;
+}
+
+.profile-img-2 {
+  width: 150px;
+  height: 150px;
+}
+
+.profile-question {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.profile-text {
+  text-align: justify;
+}
+
+.profile-header {
+  border: transparent;
 }
 
 /****Banner shooting stars animation****/
