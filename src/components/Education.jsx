@@ -1,9 +1,17 @@
-import { Container, Modal, Row, CardGroup, Button, Nav } from "react-bootstrap";
+import {
+  Container,
+  Modal,
+  Row,
+  CardGroup,
+  Button,
+  CloseButton,
+} from "react-bootstrap";
 import { Card } from "react-bootstrap";
 import { useState } from "react";
 import { IoLocationSharp } from "react-icons/io5";
 import { useTranslation } from "react-i18next";
 import { FaInfoCircle } from "react-icons/fa";
+import { dark } from "@mui/material/styles/createPalette";
 
 const Education = () => {
   const { t } = useTranslation("translation", {
@@ -101,11 +109,12 @@ const Courses = ({ show, handleClose }) => {
     keyPrefix: "education.university",
   });
   return (
-    <Modal show={show} onHide={handleClose}>
-      <Modal.Header closeButton>
+    <Modal show={show} onHide={handleClose} centered>
+      <Modal.Header className="bg-dark flex-row justify-content-between profile-header">
         <Modal.Title className="fw-bold">{t("relevant-courses")}</Modal.Title>
+        <CloseButton variant="white" onClick={handleClose} />
       </Modal.Header>
-      <Modal.Body>
+      <Modal.Body className="bg-dark">
         <ul className="list-unstyled ">
           <CourseInput
             name={t("courses.CS-A1110")}
@@ -149,19 +158,14 @@ const Courses = ({ show, handleClose }) => {
           />
         </ul>
       </Modal.Body>
-      <Modal.Footer>
-        <Button variant="primary" onClick={handleClose}>
-          OK
-        </Button>
-      </Modal.Footer>
     </Modal>
   );
 };
 
 const CourseInput = ({ name, link, code }) => {
   return (
-    <li className="d-flex flex-row justify-content-between border-bottom">
-      <span className="fw-light">{name}</span>
+    <li className="d-flex flex-row justify-content-between my-2 course-input">
+      <p className="fst-italic">{name}</p>
       <a href={link}>{code}</a>
     </li>
   );
