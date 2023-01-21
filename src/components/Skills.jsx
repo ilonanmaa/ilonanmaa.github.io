@@ -60,15 +60,19 @@ const Technical = () => {
       <div className="mb-4">
         <SkillBadge text="Scala" />
 
-        <Progress barClassName="skill-bar" value={90} />
+        <Progress barClassName="skill-bar" value={100} />
       </div>
       <div className="mb-4">
         <SkillBadge text="HTML/CSS" />
-        <SkillBadge text="Javascript" />
         <SkillBadge text="React" />
+
+        <Progress barClassName="skill-bar" value={85} />
+      </div>
+      <div className="mb-4">
+        <SkillBadge text="Javascript" />
         <SkillBadge text="React Native" />
 
-        <Progress barClassName="skill-bar" value={75} />
+        <Progress barClassName="skill-bar" value={65} />
       </div>
       <div className="mb-4">
         <SkillBadge text="Git" />
@@ -76,13 +80,18 @@ const Technical = () => {
 
         <Progress barClassName="skill-bar" value={50} />
       </div>
+      <div className="mb-4">
+        <SkillBadge text="C/C++" />
+        <SkillBadge text="Python" />
+
+        <Progress barClassName="skill-bar" value={40} />
+      </div>
       <div>
         <SkillBadge text="Typescript" />
         <SkillBadge text="Redux" />
-        <SkillBadge text="Python" />
-        <SkillBadge text="C/C++" />
+        <SkillBadge text="SQL" />
 
-        <Progress barClassName="skill-bar" value={45} />
+        <Progress barClassName="skill-bar" value={30} />
       </div>
     </div>
   );
