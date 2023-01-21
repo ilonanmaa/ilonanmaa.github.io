@@ -105,5 +105,13 @@
     "socials": {
       "title": "Links"
     }
+  },
+  "profile": {
+    "about-me": {
+      "paragraph-who": "A 3rd year CS bachelor's student who enjoys working with people and is always ready to learn new skills.",
+      "paragraph-skills": "I have hands-on experience with software development through my university’s project course, where we are developing an app for Android based AR-glasses. I have also gained experience with frontend-development and UI-design by making this website.",
+      "paragraph-interests": "In addition to software delopment I am particuarly interested in machine learning, which is something I potentially want to pursue in my master's, and computer graphics.",
+      "paragraph-others": "Outside of school and work you will most likely find me hanging out with horses or painting. I also enjoy playing the piano, football and video games."
+    }
   }
 }
