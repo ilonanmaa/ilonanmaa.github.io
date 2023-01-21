@@ -49,7 +49,8 @@ const Projects = () => {
                   <div className="d-flex flex-row justify-content-evenly flex-wrap">
                     <SkillBadge text="React" />
                     <SkillBadge text="HTML/CSS" />
-                    <SkillBadge text="Front-end" />
+                    <SkillBadge text="Frontend" />
+                    <SkillBadge text="UI/UX-design" />
                     <SkillBadge text="Git" />
                   </div>
                 </Card.Footer>
