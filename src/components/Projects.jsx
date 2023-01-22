@@ -1,10 +1,25 @@
-import { Container, Card, Row, CardGroup } from "react-bootstrap";
+import {
+  Container,
+  Card,
+  Row,
+  CardGroup,
+  Modal,
+  Button,
+  CloseButton,
+} from "react-bootstrap";
 import { useTranslation } from "react-i18next";
-import projectBG from "../assets/img/banner-bg.jpg";
+import projectBG from "../assets/img/project-picture.PNG";
 import SkillBadge from "./SkillBadge";
+import { useState } from "react";
+import demo from "../assets/vid/demo.mp4";
 
 const Projects = () => {
   const { t } = useTranslation("translation", { keyPrefix: "projects" });
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <div className="p-4" id="projects">
       <Container className="p-4">
@@ -25,25 +40,24 @@ const Projects = () => {
                 >
                   {t("portfolio.description")}
                 </Card.Text>
-                <div className="d-flex flex-row justify-content-between">
-                  <Card.Link
+                <div className="d-flex flex-row justify-content-between my-3">
+                  <Button
                     href="https://github.com/ilonanmaa/ilonanmaa.github.io"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="fs-6 mb-3"
+                    variant="outline-light"
+                    className="fs-6 fw-bold text-uppercase"
                   >
                     {" "}
                     {t("portfolio.repository")}
-                  </Card.Link>
-                  <Card.Link
-                    href="https://ilonanmaa.github.io"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="fs-6 mb-3"
+                  </Button>
+                  <Button
+                    onClick={handleShow}
+                    variant="outline-light"
+                    className="fs-6 fw-bold text-uppercase"
                   >
-                    {" "}
                     {t("portfolio.demo")}
-                  </Card.Link>
+                  </Button>
                 </div>
                 <Card.Footer className="border-top border-azure">
                   <div className="d-flex flex-row justify-content-evenly flex-wrap">
@@ -59,7 +73,24 @@ const Projects = () => {
           </CardGroup>
         </Row>
       </Container>
+      <Demo show={show} handleClose={handleClose} />
     </div>
+  );
+};
+
+const Demo = ({ show, handleClose }) => {
+  return (
+    <Modal show={show} onHide={handleClose} centered>
+      <Modal.Header className="bg-dark flex-row justify-content-between border-bottom">
+        <Modal.Title className="fw-bold">Demo</Modal.Title>
+        <CloseButton variant="white" onClick={handleClose} />
+      </Modal.Header>
+      <Modal.Body className="bg-black justify-content-center d-flex flex-row">
+        <video controls id="video-demo">
+          <source src={demo} type="video/mp4" />
+        </video>
+      </Modal.Body>
+    </Modal>
   );
 };
 
