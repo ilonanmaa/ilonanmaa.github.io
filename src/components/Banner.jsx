@@ -11,10 +11,12 @@ import { useTranslation } from "react-i18next";
 import { MdPictureAsPdf } from "react-icons/md";
 import { useState } from "react";
 import profile from "../assets/img/profile.jpg";
-import { dark, light } from "@mui/material/styles/createPalette";
+import CV_english from "../assets/docs/CV_Ilona_Ma_English.pdf";
+import CV_finnish from "../assets/docs/CV_Ilona_Ma_Suomi.pdf";
 
 const Banner = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("translation");
+  const { i18n } = useTranslation("welcome");
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -31,7 +33,7 @@ const Banner = () => {
             </div>
             <div>
               <Button
-                className="fw-bold  my-1 banner-button"
+                className="fw-bold my-1"
                 variant="outline-light"
                 onClick={handleShow}
               >
@@ -41,7 +43,9 @@ const Banner = () => {
             <div>
               <Button
                 className="fw-bold my-2 align-items-center d-flex flex-row banner-button"
-                variant="outline-light "
+                variant="outline-light"
+                href={i18n.language === "en" ? CV_english : CV_finnish}
+                download
               >
                 {t("welcome.download-button")}
                 <MdPictureAsPdf className="fs-2 ms-2" />
