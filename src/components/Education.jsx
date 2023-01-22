@@ -54,19 +54,17 @@ const Education = () => {
                         games
                       </span>
                     </li>
-                    <li>
-                      <Button
-                        onClick={handleShow}
-                        variant="link"
-                        className="fs-6"
-                      >
-                        {t("university.relevant-courses")}
-                      </Button>
-                    </li>
                   </ul>
                   <li>{t("university.minor")}</li>
                   <li>{t("university.location")}</li>
                 </ul>
+                <Button
+                  onClick={handleShow}
+                  variant="outline-light"
+                  className="fs-6 fw-bold text-uppercase"
+                >
+                  {t("university.relevant-courses")}
+                </Button>
               </Card.Body>
             </Card>
             <Card>
@@ -88,10 +86,7 @@ const Education = () => {
                     <li>{t("high-school.exams.science")}</li>
                     <li>{t("high-school.exams.languages")}</li>
                   </ul>
-                  <li>Additional</li>
-                  <ul>
-                    <li>{t("high-school.german-diploma")}</li>
-                  </ul>
+                  <li>{t("high-school.german-diploma")}</li>
                   <li>{t("high-school.location")}</li>
                 </ul>
               </Card.Body>

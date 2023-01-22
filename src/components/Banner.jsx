@@ -26,24 +26,24 @@ const Banner = () => {
           <Col className="p-4">
             <div className="mb-2">
               <h1 id="welcome" className="fw-bolder block d-inline">
-                {t("welcome")}
+                {t("welcome.text")}
               </h1>
             </div>
             <div>
               <Button
-                className="fw-bold"
-                variant="outline-light my-1"
+                className="fw-bold  my-1 banner-button"
+                variant="outline-light"
                 onClick={handleShow}
               >
-                About me
+                {t("welcome.profile-button")}
               </Button>
             </div>
             <div>
               <Button
-                className="fw-bold"
-                variant="outline-light my-2 align-items-center d-flex flex-row"
+                className="fw-bold my-2 align-items-center d-flex flex-row banner-button"
+                variant="outline-light "
               >
-                Download
+                {t("welcome.download-button")}
                 <MdPictureAsPdf className="fs-2 ms-2" />
               </Button>
             </div>
@@ -72,43 +72,56 @@ const Profile = ({ show, handleClose }) => {
           </div>
           <Row className="my-1">
             <Col>
-              <span className="fst-italic me-4 profile-question">Who?</span>
+              <span className="fst-italic me-4 profile-question">
+                {t("questions.who")}
+              </span>
             </Col>
             <Col>
-              <p className=""> {t("about-me.paragraph-who")}</p>
+              <p className=""> {t("answers.paragraph-who")}</p>
             </Col>
           </Row>
           <Row className="my-1">
             {" "}
             <Col>
               <span className="fst-italic me-4 profile-question">
-                What kind of hands-on experience do you have?
+                {t("questions.experience")}
               </span>
             </Col>
             <Col>
-              <p className=""> {t("about-me.paragraph-skills")}</p>
+              <p className=""> {t("answers.paragraph-skills")}</p>
             </Col>
           </Row>
           <Row className="my-1">
             {" "}
             <Col>
               <span className="fst-italic me-4 profile-question">
-                Interests within the field of computer science?
+                {t("questions.interests")}
               </span>
             </Col>
             <Col>
-              <p className=""> {t("about-me.paragraph-interests")}</p>
+              <p className=""> {t("answers.paragraph-interests")}</p>
             </Col>
           </Row>
           <Row className="my-1">
             {" "}
             <Col>
               <span className="fst-italic me-4 profile-question">
-                What about other interests?
+                {t("questions.others")}
               </span>
             </Col>
             <Col>
-              <p className=""> {t("about-me.paragraph-others")}</p>
+              <p className=""> {t("answers.paragraph-others")}</p>
+            </Col>
+          </Row>
+          <Row className="my-1">
+            {" "}
+            <Col>
+              <span className="fst-italic me-4 profile-question">
+                {t("questions.random")}
+              </span>
+            </Col>
+            <Col>
+              <p className=""> {t("answers.paragraph-random")}</p>
             </Col>
           </Row>
         </div>

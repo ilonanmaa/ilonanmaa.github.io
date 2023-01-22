@@ -53,12 +53,13 @@ const Experience = () => {
                   <li className="fw-bolder">{t("TA.description")}</li>
                   <ul>
                     <li>{t("TA.type")}</li>
-                    <li>
-                      <a href="https://sisu.aalto.fi/student/courseunit/otm-49b90b5f-7a82-4255-9b68-7ce91fe3964a/brochure">
-                        CS-A1110
-                      </a>
-                    </li>
                   </ul>
+                  <li>
+                    {t("TA.coursepage")}
+                    <a href="https://sisu.aalto.fi/student/courseunit/otm-49b90b5f-7a82-4255-9b68-7ce91fe3964a/brochure">
+                      CS-A1110
+                    </a>
+                  </li>
                 </ul>
               </Card.Body>
             </Card>

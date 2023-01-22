@@ -1,5 +1,9 @@
 {
-  "welcome": "Welcome to my portfolio!",
+  "welcome": {
+    "text": "Welcome to my portfolio!",
+    "profile-button": "About me",
+    "download-button": "Download"
+  },
   "menu": {
     "home": "Home",
     "education": "Education",
@@ -56,6 +60,7 @@
     "TA": {
       "title": "Teaching assistant TA",
       "description": "Teaching assistant for course Programming 1",
+      "coursepage": "Course description: ",
       "time": "09/2022-12/2022",
       "type": "Part-time",
       "company": "Aalto university"
@@ -107,11 +112,19 @@
     }
   },
   "profile": {
-    "about-me": {
+    "questions": {
+      "who": "Who?",
+      "experience": "What kind of hands-on experience do you have?",
+      "interests": "Interests within the field of computer science?",
+      "others": "What about other interests?",
+      "random": "One interesting fact about you."
+    },
+    "answers": {
       "paragraph-who": "A 3rd year CS bachelor's student who enjoys working with people and is always ready to learn new skills.",
-      "paragraph-skills": "I have hands-on experience with software development through my university’s project course, where we are developing an app for Android based AR-glasses. I have also gained experience with frontend-development and UI-design by making this website.",
+      "paragraph-skills": "I have hands-on experience with software development through my university’s project course, where we are developing an app for Android based AR-glasses. I have also gained experience with frontend-development from making this website.",
       "paragraph-interests": "In addition to software delopment I am particuarly interested in machine learning, which is something I potentially want to pursue in my master's, and computer graphics.",
-      "paragraph-others": "Outside of school and work you will most likely find me hanging out with horses or painting. I also enjoy playing the piano, football and video games."
+      "paragraph-others": "Outside of school and work you can find me hanging out with horses or painting. I also enjoy playing piano and football.",
+      "paragraph-random": "My last name 'Ma' means horse in Chinese and I am very happy of that."
     }
   }
 }
