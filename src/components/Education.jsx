@@ -105,7 +105,7 @@ const Courses = ({ show, handleClose }) => {
   });
   return (
     <Modal show={show} onHide={handleClose} centered>
-      <Modal.Header className="bg-dark flex-row justify-content-between profile-header">
+      <Modal.Header className="bg-dark flex-row justify-content-between">
         <Modal.Title className="fw-bold">{t("relevant-courses")}</Modal.Title>
         <CloseButton variant="white" onClick={handleClose} />
       </Modal.Header>

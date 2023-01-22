@@ -118,6 +118,10 @@ body {
   padding-right: 0 !important;
 }
 
+.modal-header {
+  border: transparent;
+}
+
 /****Experience CSS****/
 
 #experience {
@@ -363,8 +367,8 @@ body {
   text-align: justify;
 }
 
-.profile-header {
-  border: transparent;
+.banner-button {
+  display: inline-block !important;
 }
 
 /****Banner shooting stars animation****/
@@ -450,4 +454,10 @@ body {
   left: initial;
   animation-delay: 0.1s;
   animation-duration: 3s;
+}
+
+/****Video Demo ****/
+
+#video-demo {
+  height: 95vh;
 }
