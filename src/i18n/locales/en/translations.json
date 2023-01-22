@@ -17,7 +17,7 @@
     "university": {
       "bachelor-title": "Bachelor of Science in Technology",
       "time": "09/2020-06/2023 (expected)",
-      "university": "Aalto university",
+      "university": "Aalto University",
       "major": "Major in computer science",
       "minor": "Minor in quantum technology",
       "location": "Espoo, Finland",
@@ -54,8 +54,8 @@
       "description": "Software developer in a Scrum team",
       "time": "12/2022-05/2023",
       "type": "Part-time",
-      "info": "Project done as part of Aalto university's Software Project course",
-      "company": "Aalto university/Beamex"
+      "info": "Project done as part of Aalto University's Software Project course",
+      "company": "Aalto University/Beamex"
     },
     "TA": {
       "title": "Teaching assistant TA",
@@ -63,7 +63,7 @@
       "coursepage": "Course description: ",
       "time": "09/2022-12/2022",
       "type": "Part-time",
-      "company": "Aalto university"
+      "company": "Aalto University"
     },
     "stablehand": {
       "title": "Stablehand",
@@ -122,7 +122,7 @@
     "answers": {
       "paragraph-who": "A 3rd year CS bachelor's student who enjoys working with people and is always ready to learn new skills.",
       "paragraph-skills": "I have hands-on experience with software development through my university’s project course, where we are developing an app for Android based AR-glasses. I have also gained experience with frontend-development from making this website.",
-      "paragraph-interests": "In addition to software delopment I am particuarly interested in machine learning, which is something I potentially want to pursue in my master's, and computer graphics.",
+      "paragraph-interests": "In addition to software delopment I am particularly interested in machine learning, which is something I potentially want to pursue in my master's, and computer graphics.",
       "paragraph-others": "Outside of school and work you can find me hanging out with horses or painting. I also enjoy playing piano and football.",
       "paragraph-random": "My last name 'Ma' means horse in Chinese and I am very happy of that."
     }
