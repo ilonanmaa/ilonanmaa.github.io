@@ -64,15 +64,15 @@ const Technical = () => {
       </div>
       <div className="mb-4">
         <SkillBadge text="HTML/CSS" />
-        <SkillBadge text="React" />
+        <SkillBadge text="Javascript" />
 
         <Progress barClassName="skill-bar" value={85} />
       </div>
       <div className="mb-4">
-        <SkillBadge text="Javascript" />
+        <SkillBadge text="React" />
         <SkillBadge text="React Native" />
 
-        <Progress barClassName="skill-bar" value={65} />
+        <Progress barClassName="skill-bar" value={70} />
       </div>
       <div className="mb-4">
         <SkillBadge text="Git" />
