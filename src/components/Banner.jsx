@@ -14,13 +14,17 @@ import profile from "../assets/img/profile.jpg";
 import CV_english from "../assets/docs/CV_Ilona_Ma_English.pdf";
 import CV_finnish from "../assets/docs/CV_Ilona_Ma_Suomi.pdf";
 
+/**This is the banner/home component. What users see when they open the website */
+
 const Banner = () => {
   const { t } = useTranslation("translation");
   const { i18n } = useTranslation("welcome");
   const [show, setShow] = useState(false);
 
+  /**These are functions for closing and opening the modal. */
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
   return (
     <section id="home">
       <Container className="">
@@ -41,6 +45,7 @@ const Banner = () => {
               </Button>
             </div>
             <div>
+              {/**There are two versions of the CV. They will be downloaded depending on the language the user has chosen.*/}
               <Button
                 className="fw-bold my-2 align-items-center d-flex flex-row banner-button"
                 variant="outline-light"
@@ -59,6 +64,7 @@ const Banner = () => {
   );
 };
 
+/**Modal that contains the "About me" section. */
 const Profile = ({ show, handleClose }) => {
   const { t } = useTranslation("translation", { keyPrefix: "profile" });
   return (
