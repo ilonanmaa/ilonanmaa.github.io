@@ -78,6 +78,7 @@ const Projects = () => {
   );
 };
 
+/**Demo video for demonstrating the mobile view of the website */
 const Demo = ({ show, handleClose }) => {
   return (
     <Modal show={show} onHide={handleClose} centered>

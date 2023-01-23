@@ -18,6 +18,7 @@ import profile from "../assets/img/profile.jpg";
 const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
 
+  /**Detect user scroll, when scrolled to the welcome text setScrolled = true. This is useed to control navbar styling */
   useEffect(() => {
     const onScroll = () => {
       if (
@@ -35,9 +36,10 @@ const NavBar = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  /**Determine if the sidemenu should be hidden or not, for mobile view.*/
   const [sideMenuHidden, setSideHidden] = useState(true);
 
-  /*Bootstrap default breakpoint lg: width >= 992px*/
+  /**Bootstrap default breakpoint lg: width >= 992px*/
   const [hidden, setHidden] = useState(window.innerWidth < 992 ? true : false);
 
   window.addEventListener("resize", () => {
@@ -59,6 +61,7 @@ const NavBar = () => {
   const { t } = useTranslation("translation", { keyPrefix: "menu" });
   return (
     <div>
+      {/**This is the sidemenu for mobile view. */}
       <div
         id="sidemenu"
         hidden={sideMenuHidden}
@@ -159,6 +162,7 @@ const NavBar = () => {
           </div>
         </Nav>
       </div>
+      {/**This is the navbar for desktop view. Will collapse behind a hamburger-menu for mobile view.*/}
       <Navbar
         expand="lg"
         className={

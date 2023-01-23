@@ -1,5 +1,6 @@
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 
+/**Component for star ratings, used in Skills-component in the language-tab content. */
 const StarRating = ({ count }) => {
   const stars = new Array([
     <AiOutlineStar />,

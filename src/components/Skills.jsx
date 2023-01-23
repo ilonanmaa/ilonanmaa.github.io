@@ -7,6 +7,7 @@ import "../App.css";
 import StarRating from "./StarRating";
 import { useTranslation } from "react-i18next";
 
+/**Skills tab with two buttons: technical and language skills */
 const Skills = () => {
   const { t } = useTranslation("translation", {
     keyPrefix: "skills",
@@ -54,6 +55,7 @@ const Skills = () => {
   );
 };
 
+/**This is the tab for technical skills */
 const Technical = () => {
   return (
     <div className="py-4 px-2 ">
@@ -97,6 +99,7 @@ const Technical = () => {
   );
 };
 
+/**This is the tab for language skills */
 const Languages = () => {
   const { t } = useTranslation("translation", {
     keyPrefix: "skills.languages",

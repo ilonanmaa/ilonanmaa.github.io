@@ -1,3 +1,4 @@
+/**Component for CSS shooting star animations. */
 const ShootingStars = () => {
   return (
     <section id="shooting-stars">

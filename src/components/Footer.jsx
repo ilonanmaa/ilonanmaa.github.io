@@ -9,6 +9,7 @@ import { useTranslation } from "react-i18next";
 import { Button, Nav } from "react-bootstrap";
 import { MdPictureAsPdf } from "react-icons/md";
 
+/**Footer component that contains site information, such as image credits, and contact information. */
 const Footer = () => {
   const { t } = useTranslation("translation", { keyPrefix: "footer" });
   return (
