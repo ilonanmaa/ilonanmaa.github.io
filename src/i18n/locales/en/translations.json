@@ -92,7 +92,7 @@
     "title": "Projects",
     "portfolio": {
       "title": "Personal website",
-      "description": "Personal CV website and my project for learning front-end development with React. This project uses React-Bootstrap library. Hosted on GitHub Pages.",
+      "description": "Personal CV website and my project for learning frontend development with React. This project uses React-Bootstrap library. Hosted on GitHub Pages.",
       "repository": "Repository",
       "demo": "Demo"
     }
@@ -121,8 +121,8 @@
     },
     "answers": {
       "paragraph-who": "A 3rd year CS bachelor's student who enjoys working with people and is always ready to learn new skills.",
-      "paragraph-skills": "I have hands-on experience with software development through my university’s project course, where we are developing an app for Android based AR-glasses. I have also gained experience with frontend-development from making this website.",
-      "paragraph-interests": "In addition to software delopment I am particularly interested in machine learning, which is something I potentially want to pursue in my master's, and computer graphics.",
+      "paragraph-skills": "I have hands-on experience with software development through my university’s project course where we are developing a software for a client outside the universty. Our project is related to calibrating weighing instruments with AR-glasses. I have also gained experience with frontend-development from making this website.",
+      "paragraph-interests": "In addition to software delopment I am particularly interested in machine learning, which is something I want to pursue in my master's, and computer graphics.",
       "paragraph-others": "Outside of school and work you can find me hanging out with horses or painting. I also enjoy playing piano and football.",
       "paragraph-random": "My last name 'Ma' means horse in Chinese and I am very happy of that."
     }

@@ -67,7 +67,7 @@
     },
     "stablehand": {
       "title": "Tallityöntekijä",
-      "description": "Tallityöntakijä ratsastuskoulussa",
+      "description": "Tallityöntekijä ratsastuskoulussa",
       "time": "09/2018-03/2022",
       "type": "Osa-aikaisena ja kesätyöläisenä",
       "company": "Leppävaaran ratsastuskoulu"
@@ -93,7 +93,7 @@
     "title": "Projektit",
     "portfolio": {
       "title": "Persoonallinen porfolio",
-      "description": "Persoonallinen portfolio ja projekti front-end kehityksen ja React:n opetteluun. Projekti käyttää React-bootstrap kirjasto, ja sivut hostataan GitHub Sivuilla.",
+      "description": "Persoonallinen portfolio ja projekti frontend kehityksen ja React:n opetteluun. Projektissa käytetään pääosin React-bootstrap kirjastoa. Sivut hostataan GitHub Pages:ssa.",
       "repository": "Repository",
       "demo": "Demo"
     }
@@ -121,8 +121,8 @@
       "random": "Kerro yksi mielenkiintoinen fakta."
     },
     "answers": {
-      "paragraph-who": "Kolmannen vuoden tietotekniikan opiskelija, joka tykkää ihmisläheisestä työstä ja on aina valmiina oppimaan uutta",
-      "paragraph-skills": "Olen saanut kokemusta ohjelmistokehityksestä yliopiston projektikurssin myötä, jossa kehitämme tällä hetkellä sovellusta Android-pohjaisille AR-laseille. Olen saanut kokemusta myös tekemällä näitä verkkosivuja.",
+      "paragraph-who": "Kolmannen vuoden tietotekniikan opiskelija, joka tykkää ihmisläheisestä työstä ja on aina valmiina oppimaan uutta.",
+      "paragraph-skills": "Olen saanut kokemusta ohjelmistokehityksestä yliopiston projektikurssin myötä, jossa teemme sovellusta yliopiston ulkopuoliselle asiakkaalle. Meidän projektimme liittyy Android-pohjaisiin AR-laseihin ja niillä kalibroimiseen. Olen saanut kokemusta myös tekemällä näitä verkkosivuja.",
       "paragraph-interests": "Ohjelmistokehityksen lisäksi minua kiinnostaa erityisen paljon koneoppiminen ja tietokonegrafiikat. Kumpaakin aihetta käsittelin kandityössäni, ja olen ajatellut maisterivaiheessa erikoistua koneoppimiseen.",
       "paragraph-others": "Koulun ulkopuolella nautin hevosten kanssa olemisesta ja maalaamisesta. Tykkään myös soittaa pianoa ja pelata jalkapalloa, ja olen omistautunut penkkiurheilija. ",
       "paragraph-random": "Sukunimeni 'Ma' tarkoittaa kiinaksi hevosta, mistä olen todella iloinen."
