@@ -99,6 +99,7 @@ const Education = () => {
   );
 };
 
+/**Modal containing the relevant courses. */
 const Courses = ({ show, handleClose }) => {
   const { t } = useTranslation("translation", {
     keyPrefix: "education.university",
@@ -156,6 +157,12 @@ const Courses = ({ show, handleClose }) => {
     </Modal>
   );
 };
+
+/**Individual component for inputting courses.
+ * name - course name
+ * link - link to course description in Sisu
+ * code - code of the course
+ */
 
 const CourseInput = ({ name, link, code }) => {
   return (
