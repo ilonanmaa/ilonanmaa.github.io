@@ -95,6 +95,29 @@ body {
   color: azure;
 }
 
+/****Side menu CSS****/
+#sidemenu {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  color: azure;
+  width: 75%;
+  translate: 100%;
+  z-index: 1;
+  padding-top: 100px;
+}
+
+.navbar-item {
+  translate: 100%;
+  transition: translate 0.5s;
+  color: azure;
+}
+
+.navbar-visible {
+  translate: 0px !important;
+}
+
 /****Modal CSS****/
 .modal {
   color: azure;
@@ -297,29 +320,6 @@ body {
   background-clip: text;
 }
 
-/****Side menu CSS****/
-#sidemenu {
-  position: fixed;
-  top: 0px;
-  bottom: 0px;
-  right: 0px;
-  color: azure;
-  width: 75%;
-  translate: 100%;
-  z-index: 1;
-  padding-top: 100px;
-}
-
-.navbar-item {
-  translate: 100%;
-  transition: translate 0.5s;
-  color: azure;
-}
-
-.navbar-visible {
-  translate: 0px !important;
-}
-
 /****Footer CSS****/
 .copyright-bar {
   border-top: 3px solid;
@@ -395,6 +395,7 @@ body {
   height: 1px;
   background: linear-gradient(90deg, #fff, transparent 90%);
 }
+
 @keyframes animate {
   0% {
     transform: rotate(315deg) translateX(0);
