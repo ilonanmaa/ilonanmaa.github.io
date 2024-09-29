@@ -8,10 +8,8 @@ import {
 } from "react-bootstrap";
 import { Card } from "react-bootstrap";
 import { useState } from "react";
-import { IoLocationSharp } from "react-icons/io5";
 import { useTranslation } from "react-i18next";
-import { FaInfoCircle } from "react-icons/fa";
-import { dark } from "@mui/material/styles/createPalette";
+
 
 const Education = () => {
   const { t } = useTranslation("translation", {
@@ -31,6 +29,26 @@ const Education = () => {
         </Row>
         <Row>
           <CardGroup>
+          <Card>
+              <Card.Body className="bg-dark">
+                <div className="border-bottom pb-3">
+                  <Card.Title className="fs-4 fw-bolder">
+                    {t("universityMA.master-title")}
+                  </Card.Title>
+                  <Card.Title className="fs-5 fw-bolder">
+                    {t("universityMA.university")}
+                  </Card.Title>
+                  <Card.Subtitle className="opacity-75 mt-2 fst-italic">
+                    {t("universityMA.time")}
+                  </Card.Subtitle>
+                </div>
+                <ul className="text-start fs-6 lh-lg mt-2">
+                  <li>{t("universityMA.major")}</li>
+                  <li>{(t("universityMA.exchange"))}</li>
+                  <li>{t("university.location")}</li>
+                </ul>
+              </Card.Body>
+            </Card>
             <Card>
               <Card.Body className="bg-dark">
                 <div className="border-bottom pb-3">
@@ -58,13 +76,7 @@ const Education = () => {
                   <li>{t("university.minor")}</li>
                   <li>{t("university.location")}</li>
                 </ul>
-                <Button
-                  onClick={handleShow}
-                  variant="outline-light"
-                  className="fs-6 fw-bold text-uppercase"
-                >
-                  {t("university.relevant-courses")}
-                </Button>
+
               </Card.Body>
             </Card>
             <Card>

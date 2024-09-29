@@ -14,9 +14,21 @@
   },
   "education": {
     "title": "Education",
+    "universityMA": {
+      "master-title": "Computer, Communication and Information Sciences",
+      "time": "09/2023-present",
+      "university": "Aalto University",
+      "major": "Major in machine learning, artificial intelligence and data science",
+      "exchange": "Semester at National Taiwan University of Science and Technology",
+      "location": "Espoo, Finland",
+      "relevant-courses": "Relevant courses",
+      "courses": {
+
+      }
+    },
     "university": {
       "bachelor-title": "Bachelor of Science in Technology",
-      "time": "09/2020-06/2023 (expected)",
+      "time": "09/2020-05/2023",
       "university": "Aalto University",
       "major": "Major in computer science",
       "minor": "Minor in quantum technology",
@@ -57,9 +69,17 @@
       "info": "Project done as part of Aalto University's Software Project course",
       "company": "Aalto University/Beamex"
     },
+    "headTA": {
+      "title": "Head teaching assistant",
+      "description": "Head teaching assistant and developer for the course Programming 1",
+      "coursepage": "Course description: ",
+      "time": "06/2023-12/2023, 08/2024-present",
+      "type": "Full time and part-time",
+      "company": "Aalto University"
+    },
     "TA": {
-      "title": "Teaching assistant TA",
-      "description": "Teaching assistant for course Programming 1",
+      "title": "Teaching assistant",
+      "description": "Teaching assistant for the course Programming 1",
       "coursepage": "Course description: ",
       "time": "09/2022-12/2022",
       "type": "Part-time",
@@ -120,11 +140,11 @@
       "random": "One interesting fact about you."
     },
     "answers": {
-      "paragraph-who": "A 3rd year CS bachelor's student who enjoys working with people and is always ready to learn new skills.",
-      "paragraph-skills": "I have hands-on experience with software development through my university’s project course where we are developing a software for a client outside the universty. Our project is related to calibrating weighing instruments with AR-glasses. I have also gained experience with frontend-development from making this website.",
+      "paragraph-who": "A 2nd year CS master's student who enjoys working with people and is always ready to learn new skills.",
+      "paragraph-skills": "I have hands-on experience with software development through my university’s project course where we developed a software for a client. Our project was related to calibrating weighing instruments with AR-glasses. I have also gained experience with frontend-development from making this website. I am currently working as a head teaching assitant and developer for my university's programming course.",
       "paragraph-interests": "In addition to software delopment I am particularly interested in machine learning, which is something I want to pursue in my master's, and computer graphics.",
       "paragraph-others": "Outside of school and work you can find me hanging out with horses or painting. I also enjoy playing piano and football.",
-      "paragraph-random": "My last name 'Ma' means horse in Chinese and I am very happy of that."
+      "paragraph-random": "My last name 'Ma' means horse in Chinese."
     }
   }
 }

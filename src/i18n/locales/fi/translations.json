@@ -14,9 +14,21 @@
   },
   "education": {
     "title": "Koulutus",
+    "universityMA": {
+      "master-title": "Computer, Communication and Information Sciences",
+      "time": "09/2023-",
+      "university": "Aalto yliopisto",
+      "major": "Pääaineena machine learning, artificial intelligence and data science",
+      "exchange": "Lukukausi ulkomailla: National Taiwan University of Science and Technology",
+      "location": "Espoo, Suomi",
+      "relevant-courses": "Relevant courses",
+      "courses": {
+
+      }
+    },
     "university": {
       "bachelor-title": "Tekniikan kandidaatti",
-      "time": "09/2020-06/2023 (ennuste)",
+      "time": "09/2020-05/2023",
       "university": "Aalto yliopisto",
       "major": "Pääaineena tietotekniikka",
       "minor": "Sivuaineena quantum technology",
@@ -56,6 +68,14 @@
       "type": "Osa-aikainen",
       "info": "Projekti tehty osana Aalto yliopiston kurssia Software Project",
       "company": "Aalto yliopisto/Beamex"
+    },
+    "headTA": {
+      "title": "Pääassistentti",
+      "description": "Pääassistentti ja kehittäjä Aalto yliopiston Ohjelmointi 1 kurssilla",
+      "coursepage": "Kurssin kuvaus: ",
+      "time": "06/2023-12/2023, 08/2024-",
+      "type": "Kokoaikainen ja osa-aikainen",
+      "company": "Aalto yliopisto"
     },
     "TA": {
       "title": "Tuntiassistentti",
@@ -121,11 +141,11 @@
       "random": "Kerro yksi mielenkiintoinen fakta."
     },
     "answers": {
-      "paragraph-who": "Kolmannen vuoden tietotekniikan opiskelija, joka tykkää ihmisläheisestä työstä ja on aina valmiina oppimaan uutta.",
-      "paragraph-skills": "Olen saanut kokemusta ohjelmistokehityksestä yliopiston projektikurssin myötä, jossa teemme sovellusta yliopiston ulkopuoliselle asiakkaalle. Meidän projektimme liittyy Android-pohjaisiin AR-laseihin ja niillä kalibroimiseen. Web-kehityksestä minulla on käytännön kokemusta tämän nettisivun kautta.",
-      "paragraph-interests": "Ohjelmistokehityksen lisäksi minua kiinnostaa erityisen paljon koneoppiminen ja tietokonegrafiikat. Kumpaakin aihetta käsittelin kandityössäni, ja olen ajatellut maisterivaiheessa erikoistua koneoppimiseen.",
-      "paragraph-others": "Koulun ulkopuolella nautin hevosten kanssa olemisesta ja maalaamisesta. Tykkään myös soittaa pianoa ja pelata jalkapalloa, ja olen omistautunut penkkiurheilija. ",
-      "paragraph-random": "Sukunimeni 'Ma' tarkoittaa kiinaksi hevosta, mistä olen todella iloinen."
+      "paragraph-who": "Toisen vuoden maisteri opiskelija, joka tykkää ihmisläheisestä työstä ja on aina valmiina oppimaan uutta.",
+      "paragraph-skills": "Olen saanut kokemusta ohjelmistokehityksestä yliopiston projektikurssin myötä, jossa teimme sovellusta yliopiston ulkopuoliselle asiakkaalle. Projektimme liittyi Android-pohjaisiin AR-laseihin ja niillä kalibroimiseen. Web-kehityksestä minulla on käytännön kokemusta tämän nettisivun kautta. Toimin lisäksi yliopiston kurssilla pääassistenttina, ja minulla on sitä kautta kokemusta ohjelmistokehityksestä ja opettamisesta.",
+      "paragraph-interests": "Ohjelmistokehityksen lisäksi minua kiinnostaa erityisen paljon koneoppiminen ja tietokonegrafiikat. Kumpaakin aihetta tutkin kandityössäni, ja erikoistun nyt maisteriopinnoissa koneoppimiseen ja tekoälyyn.",
+      "paragraph-others": "Koulun ulkopuolella nautin hevosten kanssa olemisesta ja maalaamisesta. Tykkään myös soittaa pianoa ja pelata jalkapalloa, ja olen omistautunut penkkiurheilija.",
+      "paragraph-random": "Sukunimeni 'Ma' tarkoittaa kiinaksi hevosta."
     }
   }
 }

@@ -12,6 +12,33 @@ const Experience = () => {
         </Row>
         <Row>
           <CardGroup>
+          <Card>
+              <Card.Body className="bg-dark">
+                <div className="border-bottom pb-3">
+                  <Card.Title className="fs-4 fw-bolder">
+                    {t("headTA.title")}
+                  </Card.Title>
+                  <Card.Title className="fs-5 fw-bold">
+                    {t("headTA.company")}
+                  </Card.Title>
+                  <Card.Subtitle className="opacity-75 mt-2 fst-italic">
+                    {t("headTA.time")}
+                  </Card.Subtitle>
+                </div>
+                <ul className="text-start fs-6 lh-lg mt-2">
+                  <li className="fw-bolder">{t("headTA.description")}</li>
+                  <ul>
+                    <li>{t("headTA.type")}</li>
+                  </ul>
+                  <li>
+                    {t("headTA.coursepage")}
+                    <a href="https://sisu.aalto.fi/student/courseunit/otm-49b90b5f-7a82-4255-9b68-7ce91fe3964a/brochure">
+                      CS-A1110
+                    </a>
+                  </li>
+                </ul>
+              </Card.Body>
+            </Card>
             <Card>
               <Card.Body className="bg-dark">
                 <div className="border-bottom pb-3">
