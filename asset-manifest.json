@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.c2a63c20.css",
-    "main.js": "/static/js/main.6d802aeb.js",
+    "main.js": "/static/js/main.e24cecbb.js",
     "static/media/demo.mp4": "/static/media/demo.419b3405d3acf80f6495.mp4",
     "static/media/profile.jpg": "/static/media/profile.2b644a87c589eb78709e.jpg",
     "static/media/project-picture.PNG": "/static/media/project-picture.3f7ee42e92d8c8073196.PNG",
-    "static/media/CV_Ilona_Ma_Suomi.pdf": "/static/media/CV_Ilona_Ma_Suomi.7a87126f38ca604f518d.pdf",
-    "static/media/CV_Ilona_Ma_English.pdf": "/static/media/CV_Ilona_Ma_English.c3377c2febed5b710a74.pdf",
+    "static/media/CV_Ilona_Ma_English.pdf": "/static/media/CV_Ilona_Ma_English.b33406d1dc3ac45a375e.pdf",
+    "static/media/CV_Ilona_Ma_Suomi.pdf": "/static/media/CV_Ilona_Ma_Suomi.d7fe943b04f025cc99ee.pdf",
     "static/media/banner-bg-full.jpg": "/static/media/banner-bg-full.2e0bc9f5edea308242e2.jpg",
     "static/media/banner-stars-bg.jpg": "/static/media/banner-stars-bg.39f28b08078c2c8536df.jpg",
     "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
@@ -14,10 +14,10 @@
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
     "main.c2a63c20.css.map": "/static/css/main.c2a63c20.css.map",
-    "main.6d802aeb.js.map": "/static/js/main.6d802aeb.js.map"
+    "main.e24cecbb.js.map": "/static/js/main.e24cecbb.js.map"
   },
   "entrypoints": [
     "static/css/main.c2a63c20.css",
-    "static/js/main.6d802aeb.js"
+    "static/js/main.e24cecbb.js"
   ]
 }
